@@ -11,27 +11,6 @@ namespace OP_LetterLabyrinth
         private int _sizeY;
         private Random random = new Random();
 
-        private List<int> SplitIntoRandomSizes(int count, int minSize, int maxSize)
-        {
-            var reminder = count % maxSize;
-            var chunks = new List<int>();
-            while (reminder > 0 && reminder < minSize)
-            {
-                maxSize--;
-                reminder = count % maxSize;
-            }
-            var chunkCount = count / maxSize;
-            for (var i = 0; i < chunkCount; i++)
-            {
-                chunks.Add(maxSize);
-            }
-            if (reminder > 0)
-            {
-                chunks.Add(reminder);
-            }
-            return chunks;
-        }
-
         private bool GetPath(ref List<Point> usedPoints, Point lastPoint)
         {
             if (lastPoint.X == _sizeX - 1 || lastPoint.Y == _sizeY - 1)
@@ -50,7 +29,6 @@ namespace OP_LetterLabyrinth
             Logger.GetInstance().Log("INFO", $"Adding point to path: {lastPoint.X}:{lastPoint.Y}");
             var next = new Point { X = -1, Y = -1 };
             var thisResult = false;
-
             var moves = new List<Move> { Move.Down, Move.Left, Move.Right, Move.Up };
             var shuffled = moves.OrderBy(m => random.Next());
             foreach (var move in shuffled)
@@ -83,22 +61,26 @@ namespace OP_LetterLabyrinth
             Logger.GetInstance().Log("INFO", $"Computing path...");
             GetPath(ref path, new Point { X = 0, Y = 0 });
             Logger.GetInstance().Log("INFO", $"Path length: {path.Count}");
-            var sizes = SplitIntoRandomSizes(path.Count, 4, 8);
             var letters = FillRandomLetters(sizeX, sizeY);
+
+            var words = WordsFactoryProducer.GetFactory(nameof(PathProviderFactory))
+                          .GetPathWordsProvider(nameof(DictionaryPathProvider))
+                          .GetPathWords(path.Count, Dictionary);
+
+            var letterWords = new List<Letter[]>();
             var pointNumber = 0;
-            var words = new List<Letter[]>();
-            foreach (var size in sizes)
+            foreach (var word in words)
             {
-                var word = Dictionary.GetLettersOfWord(Dictionary.GetAnyWordOfLength(size));
-                words.Add(word);
-                foreach (var letter in word)
+                var wordLetters = Dictionary.GetLettersOfWord(word);
+                letterWords.Add(wordLetters);
+                foreach (var letter in wordLetters)
                 {
                     var point = path[pointNumber];
                     letters[point.X][point.Y] = letter;
                     pointNumber++;
                 }
             }
-            var shuffled = words.OrderBy(w => random.Next());
+            var shuffled = letterWords.OrderBy(w => random.Next());
             foreach (var word in shuffled)
             {
                 Dictionary.AddPathWord(word);

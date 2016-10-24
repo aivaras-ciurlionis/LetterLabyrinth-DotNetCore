@@ -56,42 +56,31 @@ namespace OP_LetterLabyrinth
             Logger.GetInstance().Log("INFO", $"Performing turn {turnNumber}");
             var move = GetAndValidatedMove();
             var position = _currentPlayer.Move(move);
-            var letter = _currentGrid.ConsumeLetterAt(position);
-            if (move != Move.Drop)
+            WordStrategyContext context = null;
+            Letter[] currentWord;
+            if (move == Move.Drop)
             {
-                var currentWord = GameStatus.GetInstance().AddLetter(letter);
-                var currentWordString = Dictionary.StringFromLetters(currentWord);
-                if (_currentDictionary.AnyWordBeginsWith(currentWord))
-                {
-                    Logger.GetInstance().Log("INFO", $"Word exists that starts with: {currentWordString}");
-                    if (_currentDictionary.WordFragmentExistsInPath(currentWord))
-                    {
-                        Logger.GetInstance().Log("INFO", $"Word fragment exists in path: {currentWordString}");
-                        if (_currentDictionary.WordExistsInPath(currentWord))
-                        {
-                            Logger.GetInstance().Log("INFO", $"Found word in path: {currentWordString}");
-                            GameStatus.GetInstance().ConsumeCurrentWord(true);
-                        }
-                    }
-                    else
-                    {
-                        if (currentWord.Length > 2 && _currentDictionary.WordExists(currentWord))
-                        {
-                            Logger.GetInstance().Log("INFO", $"Word '{currentWordString}' is correct.");
-                            GameStatus.GetInstance().ConsumeCurrentWord(true);
-                        }
-                    }
-                }
-                else
-                {
-                    Logger.GetInstance().Log("INFO", $"Word '{currentWordString}' is wrong. Removing points.");
-                    GameStatus.GetInstance().ConsumeCurrentWord(false);
-                }
+                currentWord = GameStatus.GetInstance().GetCurrentWord();
+                context = new WordStrategyContext(new StrategyDropWord());
+                context.ExecuteStrategy(currentWord, _currentDictionary);
             }
             else
             {
-                Logger.GetInstance().Log("INFO", $"Dropping word.");
-                GameStatus.GetInstance().ConsumeCurrentWord(false);
+                var letter = _currentGrid.ConsumeLetterAt(position);
+                GameStatus.GetInstance().AddLetter(letter);
+                currentWord = GameStatus.GetInstance().GetCurrentWord();
+                if (_currentDictionary.WordExists(currentWord) && currentWord.Length > 2)
+                {
+                    context = new WordStrategyContext(new StrategyAddGoodWord());
+                    context.ExecuteStrategy(currentWord, _currentDictionary);
+                }
+                if (!_currentDictionary.AnyWordBeginsWith(currentWord))
+                {
+                    context = new WordStrategyContext(new StrategyAddBadWord());
+                    context.ExecuteStrategy(currentWord, _currentDictionary);
+                    // Extra points removed for not dropping bad word
+                    GameStatus.GetInstance().AddPoints(-2 * currentWord.Length);
+                }
             }
             _graphics.DrawTurn(_currentPlayer, _currentGrid, _currentDictionary);
         }

@@ -11,11 +11,17 @@ namespace OP_LetterLabyrinth
         private List<Letter> _letters = new List<Letter>();
         private Random random = new Random();
         private List<FindableWord> _pathWords = new List<FindableWord>();
+        private List<FindableWord> _goodWords = new List<FindableWord>();
+        private List<FindableWord> _badWords = new List<FindableWord>();
 
         public Dictionary(Language language)
         {
             _language = language;
-            IDictionaryReader reader = new DictionaryReader(_language.GetDictionaryLocation());
+
+            var reader = WordsFactoryProducer.GetFactory(nameof(DictionaryReaderFactory))
+                          .GetDictionaryReader(nameof(LtDictionaryReader));
+                          
+            reader.ReadFile(_language.GetDictionaryLocation());
             _words = reader.GetAllWords();
             _letters.AddRange(reader.GetAllLetters().ToList());
         }
@@ -26,28 +32,54 @@ namespace OP_LetterLabyrinth
             _pathWords.Add(pathWord);
         }
 
+        public void AddGoodWord(Letter[] word)
+        {
+            var goodWord = new FindableWord(StringFromLetters(word), word.Sum(w => w.GetPoints()), false);
+            _goodWords.Add(goodWord);
+        }
+
+        public void AddBadWord(Letter[] word)
+        {
+            var badWord = new FindableWord(StringFromLetters(word), word.Sum(w => w.GetPoints()), false);
+            _badWords.Add(badWord);
+        }
+
+        public void MarkPathWordFound(Letter[] word)
+        {
+            var stringWord = StringFromLetters(word).ToUpper();
+            Logger.GetInstance().Log("INFO", $"Marking path word found: {stringWord}");
+            var foundWord = _pathWords.FirstOrDefault(w => !w.IsFound() && w.GetWord() == stringWord);
+            if (foundWord != null)
+            {
+                foundWord.MarkFound();
+            }
+        }
+
         public bool WordExistsInPath(Letter[] word)
         {
             var stringWord = StringFromLetters(word).ToUpper();
+            Logger.GetInstance().Log("INFO", $"Checking for word {stringWord} existance in path");
             var foundWord = _pathWords.FirstOrDefault(w => !w.IsFound() && w.GetWord() == stringWord);
-            if (foundWord == null)
-            {
-                return false;
-            }
-            foundWord.MarkFound();
-            return true;
+            Logger.GetInstance().Log("INFO", $"Result: {foundWord}");
+            return foundWord != null;
         }
 
         public bool WordFragmentExistsInPath(Letter[] word)
         {
             var stringWord = StringFromLetters(word).ToUpper();
-            return _pathWords.Any(w => !w.IsFound() && w.GetWord().StartsWith(stringWord));
+            Logger.GetInstance().Log("INFO", $"Checking for word fragment {stringWord} existance in path");
+            var result = _pathWords.Any(w => !w.IsFound() && w.GetWord().StartsWith(stringWord));
+            Logger.GetInstance().Log("INFO", $"Result:{result}");
+            return result;
         }
 
         public bool WordExists(Letter[] word)
         {
             var stringWord = StringFromLetters(word).ToLower();
-            return _words.Any(w => w == stringWord);
+            Logger.GetInstance().Log("INFO", $"Checking word {stringWord} for existance");
+            var result = _words.Any(w => w == stringWord);
+            Logger.GetInstance().Log("INFO", $"Result:{result}");
+            return result;
         }
 
         public bool AnyWordBeginsWith(Letter[] fragment)
@@ -59,6 +91,16 @@ namespace OP_LetterLabyrinth
         public string[] GetAllPathWords()
         {
             return _pathWords.Select(w => w.ToString()).ToArray();
+        }
+
+        public string[] GetAllGoodWords()
+        {
+            return _goodWords.Select(w => w.ToString()).ToArray();
+        }
+
+        public string[] GetAllBadWords()
+        {
+            return _badWords.Select(w => w.ToStringNegative()).ToArray();
         }
 
         public string GetAnyWordOfLength(int length)

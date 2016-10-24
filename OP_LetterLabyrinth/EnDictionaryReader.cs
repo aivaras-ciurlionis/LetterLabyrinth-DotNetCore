@@ -6,13 +6,14 @@ using System.Text;
 
 namespace OP_LetterLabyrinth
 {
-    public class DictionaryReader : IDictionaryReader
+    public class EnDictionaryReader : IDictionaryReader
     {
         private string[] _words;
         private List<Letter> _letters = new List<Letter>();
-
-        public DictionaryReader( string languageFilePath )
+        
+        public void ReadFile(string languageFilePath)
         {
+            Logger.GetInstance().Log("INFO", $"Reading EN dictionary");
             Logger.GetInstance().Log("INFO", $"Reading dictionary in {languageFilePath}");
             try
             {
@@ -33,7 +34,7 @@ namespace OP_LetterLabyrinth
             _words = lines;
             Logger.GetInstance().Log("INFO", $"{_words.Length} word(s) read");
         }
-	
+
         private void ReadLetters(string[] lines)
         {
             Logger.GetInstance().Log("INFO", "Reading letters");

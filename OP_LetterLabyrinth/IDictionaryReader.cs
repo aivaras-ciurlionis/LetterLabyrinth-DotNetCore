@@ -6,9 +6,8 @@ namespace OP_LetterLabyrinth
 {
     public interface IDictionaryReader
     {
-        string[] GetAllWords(  );
-        Letter[] GetAllLetters(  );
+        void ReadFile(string languageFilePath);
+        string[] GetAllWords();
+        Letter[] GetAllLetters();
     }
 }
-
-

@@ -9,7 +9,6 @@ namespace OP_LetterLabyrinth
         private static GameStatus _instance;
         private Language _currentLanguage;
         private int _points;
-
         private List<Letter> _currentWord = new List<Letter>();
 
         private GameStatus()
@@ -33,10 +32,9 @@ namespace OP_LetterLabyrinth
             return _points += points;
         }
 
-        public Letter[] AddLetter(Letter letter)
+        public void AddLetter(Letter letter)
         {
             _currentWord.Add(letter);
-            return _currentWord.ToArray();
         }
 
         public Letter[] ClearCurrentWord()
@@ -46,11 +44,16 @@ namespace OP_LetterLabyrinth
             return word;
         }
 
+        public void AddPointsForCurrentWord(bool positivePoints)
+        {
+            var wordPoints = _currentWord.Sum(l => l.GetPoints());
+            AddPoints(positivePoints ? wordPoints : -wordPoints);
+        }
+
         public void ConsumeCurrentWord(bool positivePoints)
         {
-            var consumedWord = ClearCurrentWord();
-            var wordPoints = consumedWord.Sum(l => l.GetPoints());
-            AddPoints(positivePoints ? wordPoints : -wordPoints);
+            AddPointsForCurrentWord(positivePoints);
+            ClearCurrentWord();
         }
 
         public void ResetPoints()
@@ -58,9 +61,14 @@ namespace OP_LetterLabyrinth
             _points = 0;
         }
 
+        public Letter[] GetCurrentWord()
+        {
+            return _currentWord.ToArray();
+        }
+
         public override string ToString()
         {
-            var currentWord = _currentWord.Aggregate("", (s, letter) => s+=letter.GetName().ToUpper());
+            var currentWord = _currentWord.Aggregate("", (s, letter) => s += letter.GetName().ToUpper());
             var languageName = _currentLanguage.GetLanguageName().ToUpper();
             return $"Current language: {languageName} {Environment.NewLine}" +
                    $"Current word: {currentWord} {Environment.NewLine} " +

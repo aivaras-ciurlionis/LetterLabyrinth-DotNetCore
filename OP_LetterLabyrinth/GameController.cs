@@ -15,7 +15,7 @@ namespace OP_LetterLabyrinth
         private int _sizeY;
 
         public void InstanciateGame(LanguageName language,
-            IInput input, IGraphics graphics, int sizeX, int sizeY)
+            IInput input, IGraphics graphics, int sizeX, int sizeY, PathProviderName pathProviderName)
         {
             Logger.GetInstance().Log("INFO", $"Starting game. Grid: {sizeX}:{sizeY}. Language : {language}");
             var lang = new Language(language, language + "_dictionary.txt");
@@ -24,7 +24,7 @@ namespace OP_LetterLabyrinth
             _currentPlayer = new Player(new Point { X = -1, Y = 0 });
             _sizeX = sizeX;
             _sizeY = sizeY;
-            _currentGrid = new LetterGrid(sizeX, sizeY, new SmartGridFiller(_currentDictionary));
+            _currentGrid = new LetterGrid(sizeX, sizeY, new SmartGridFiller(_currentDictionary, pathProviderName));
             _input = input;
             _graphics = graphics;
             _graphics.DrawTurn(_currentPlayer, _currentGrid, _currentDictionary);

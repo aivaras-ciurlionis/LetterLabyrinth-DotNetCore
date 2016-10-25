@@ -8,14 +8,14 @@ namespace OP_LetterLabyrinth
         {
             Logger.GetInstance().Log("INFO", $"Getting dictionary reader: {reader}");
 
-            if (reader == nameof(LtDictionaryReader))
+            if (reader == nameof(LTDictionaryReader))
             {
-                return new LtDictionaryReader();
+                return new LTDictionaryReader();
             }
 
-            if (reader == nameof(EnDictionaryReader))
+            if (reader == nameof(ENDictionaryReader))
             {
-                return new EnDictionaryReader();
+                return new ENDictionaryReader();
             }
 
             throw new ArgumentException(nameof(reader));

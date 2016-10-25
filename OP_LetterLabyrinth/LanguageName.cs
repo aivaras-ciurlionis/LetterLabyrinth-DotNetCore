@@ -7,7 +7,7 @@ namespace OP_LetterLabyrinth
 {
     public enum LanguageName
     {
-        Lt,
-        En,
+        EN = 0,
+        LT = 1
     }
 }

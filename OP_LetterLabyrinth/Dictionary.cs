@@ -18,9 +18,11 @@ namespace OP_LetterLabyrinth
         {
             _language = language;
 
-            var reader = WordsFactoryProducer.GetFactory(nameof(DictionaryReaderFactory))
-                          .GetDictionaryReader(nameof(LtDictionaryReader));
-                          
+            IDictionaryReader reader;
+
+            reader = WordsFactoryProducer.GetFactory(nameof(DictionaryReaderFactory))
+                          .GetDictionaryReader($"{_language.GetLanguageName()}DictionaryReader");
+
             reader.ReadFile(_language.GetDictionaryLocation());
             _words = reader.GetAllWords();
             _letters.AddRange(reader.GetAllLetters().ToList());

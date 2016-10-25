@@ -10,6 +10,7 @@ namespace OP_LetterLabyrinth
         private int _sizeX;
         private int _sizeY;
         private Random random = new Random();
+        private readonly PathProviderName _pathProviderName;
 
         private bool GetPath(ref List<Point> usedPoints, Point lastPoint)
         {
@@ -49,8 +50,9 @@ namespace OP_LetterLabyrinth
             return false;
         }
 
-        public SmartGridFiller(Dictionary dictionary) : base(dictionary)
+        public SmartGridFiller(Dictionary dictionary, PathProviderName providerName) : base(dictionary)
         {
+            _pathProviderName = providerName;
         }
 
         public override List<List<Letter>> GetLetters(int sizeX, int sizeY)
@@ -63,8 +65,17 @@ namespace OP_LetterLabyrinth
             Logger.GetInstance().Log("INFO", $"Path length: {path.Count}");
             var letters = FillRandomLetters(sizeX, sizeY);
 
+            string pathProvider = "";
+
+            switch (_pathProviderName)
+            {
+                case PathProviderName.Dictionary: pathProvider = nameof(DictionaryPathProvider); break;
+                case PathProviderName.Custom: pathProvider = nameof(UserPathProvider); break;
+                default: pathProvider = nameof(DictionaryPathProvider); break;
+            }
+
             var words = WordsFactoryProducer.GetFactory(nameof(PathProviderFactory))
-                          .GetPathWordsProvider(nameof(DictionaryPathProvider))
+                          .GetPathWordsProvider(pathProvider)
                           .GetPathWords(path.Count, Dictionary);
 
             var letterWords = new List<Letter[]>();

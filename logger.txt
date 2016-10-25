@@ -1,333 +1,115 @@
-2016-10-24T21:38:07 INFO     Program is starting
-2016-10-24T21:38:07 INFO     Starting game. Grid: 15:15. Language : Lt
-2016-10-24T21:38:07 INFO     Reseting game
-2016-10-24T21:38:07 INFO     Requesting factory: DictionaryReaderFactory
-2016-10-24T21:38:07 INFO     Getting dictionary reader: LtDictionaryReader
-2016-10-24T21:38:07 INFO     Reading LT dictionary
-2016-10-24T21:38:07 INFO     Reading dictionary in Lt_dictionary.txt
-2016-10-24T21:38:07 INFO     Reading words
-2016-10-24T21:38:07 INFO     127712 word(s) read
-2016-10-24T21:38:07 INFO     Reading letters
-2016-10-24T21:38:07 INFO     32 letter(s) read
-2016-10-24T21:38:07 INFO     Filling grid
-2016-10-24T21:38:07 INFO     Computing path...
-2016-10-24T21:38:07 INFO     Adding point to path: 0:0
-2016-10-24T21:38:07 INFO     Adding point to path: 0:1
-2016-10-24T21:38:07 INFO     Adding point to path: 1:1
-2016-10-24T21:38:07 INFO     Wrong point, going back: 0:1
-2016-10-24T21:38:07 INFO     Adding point to path: 1:2
-2016-10-24T21:38:07 INFO     Adding point to path: 0:2
-2016-10-24T21:38:07 INFO     Wrong point, going back: 0:1
-2016-10-24T21:38:07 INFO     Wrong point, going back: -1:2
-2016-10-24T21:38:07 INFO     Wrong point, going back: 1:2
-2016-10-24T21:38:07 INFO     Adding point to path: 0:3
-2016-10-24T21:38:07 INFO     Wrong point, going back: 0:2
-2016-10-24T21:38:07 INFO     Adding point to path: 1:3
-2016-10-24T21:38:07 INFO     Adding point to path: 2:3
-2016-10-24T21:38:07 INFO     Adding point to path: 2:2
-2016-10-24T21:38:07 INFO     Adding point to path: 3:2
-2016-10-24T21:38:07 INFO     Adding point to path: 3:1
-2016-10-24T21:38:07 INFO     Adding point to path: 4:1
-2016-10-24T21:38:07 INFO     Wrong point, going back: 3:1
-2016-10-24T21:38:07 INFO     Adding point to path: 4:0
-2016-10-24T21:38:07 INFO     Adding point to path: 5:0
-2016-10-24T21:38:07 INFO     Wrong point, going back: 4:0
-2016-10-24T21:38:07 INFO     Adding point to path: 6:0
-2016-10-24T21:38:07 INFO     Wrong point, going back: 6:-1
-2016-10-24T21:38:07 INFO     Adding point to path: 6:1
-2016-10-24T21:38:07 INFO     Wrong point, going back: 6:0
-2016-10-24T21:38:07 INFO     Adding point to path: 6:2
-2016-10-24T21:38:07 INFO     Adding point to path: 6:3
-2016-10-24T21:38:07 INFO     Adding point to path: 6:4
-2016-10-24T21:38:07 INFO     Adding point to path: 5:4
-2016-10-24T21:38:07 INFO     Adding point to path: 5:3
-2016-10-24T21:38:07 INFO     Wrong point, going back: 6:3
-2016-10-24T21:38:07 INFO     Wrong point, going back: 5:4
-2016-10-24T21:38:07 INFO     Adding point to path: 4:3
-2016-10-24T21:38:07 INFO     Wrong point, going back: 5:3
-2016-10-24T21:38:07 INFO     Adding point to path: 4:2
-2016-10-24T21:38:07 INFO     Adding point to path: 5:2
-2016-10-24T21:38:07 INFO     Wrong point, going back: 5:3
-2016-10-24T21:38:07 INFO     Adding point to path: 5:1
-2016-10-24T21:38:07 INFO     Wrong point, going back: 5:0
-2016-10-24T21:38:07 INFO     Wrong point, going back: 5:2
-2016-10-24T21:38:07 INFO     Wrong point, going back: 6:1
-2016-10-24T21:38:07 INFO     Wrong point, going back: 4:1
-2016-10-24T21:38:07 INFO     Removing last point: 5:1
-2016-10-24T21:38:07 INFO     Wrong point, going back: 4:2
-2016-10-24T21:38:07 INFO     Wrong point, going back: 6:2
-2016-10-24T21:38:07 INFO     Removing last point: 5:2
-2016-10-24T21:38:07 INFO     Wrong point, going back: 4:1
-2016-10-24T21:38:07 INFO     Wrong point, going back: 3:2
-2016-10-24T21:38:07 INFO     Wrong point, going back: 4:3
-2016-10-24T21:38:07 INFO     Removing last point: 4:2
-2016-10-24T21:38:07 INFO     Adding point to path: 3:3
-2016-10-24T21:38:07 INFO     Wrong point, going back: 3:2
-2016-10-24T21:38:07 INFO     Wrong point, going back: 2:3
-2016-10-24T21:38:07 INFO     Adding point to path: 3:4
-2016-10-24T21:38:07 INFO     Adding point to path: 3:5
-2016-10-24T21:38:07 INFO     Adding point to path: 3:6
-2016-10-24T21:38:07 INFO     Adding point to path: 3:7
-2016-10-24T21:38:07 INFO     Adding point to path: 3:8
-2016-10-24T21:38:07 INFO     Adding point to path: 2:8
-2016-10-24T21:38:07 INFO     Adding point to path: 2:9
-2016-10-24T21:38:07 INFO     Adding point to path: 3:9
-2016-10-24T21:38:07 INFO     Adding point to path: 3:10
-2016-10-24T21:38:07 INFO     Adding point to path: 2:10
-2016-10-24T21:38:07 INFO     Wrong point, going back: 2:9
-2016-10-24T21:38:07 INFO     Wrong point, going back: 3:10
-2016-10-24T21:38:07 INFO     Adding point to path: 2:11
-2016-10-24T21:38:07 INFO     Adding point to path: 1:11
-2016-10-24T21:38:07 INFO     Adding point to path: 0:11
-2016-10-24T21:38:07 INFO     Adding point to path: 0:12
-2016-10-24T21:38:07 INFO     Wrong point, going back: -1:12
-2016-10-24T21:38:08 INFO     Adding point to path: 0:13
-2016-10-24T21:38:08 INFO     Wrong point, going back: -1:13
-2016-10-24T21:38:08 INFO     Found labyrinth end: 0:14
-2016-10-24T21:38:08 INFO     Path length: 39
-2016-10-24T21:38:08 INFO     Requesting factory: PathProviderFactory
-2016-10-24T21:38:08 INFO     Getting path words provider: DictionaryPathProvider
-2016-10-24T21:38:08 INFO     Getting word of 8 length: AKTYVIUS
-2016-10-24T21:38:08 INFO     Getting word of 8 length: IŠBĖGIOS
-2016-10-24T21:38:08 INFO     Getting word of 8 length: ĮDARDĖJO
-2016-10-24T21:38:08 INFO     Getting word of 8 length: PRŪSIŠKĄ
-2016-10-24T21:38:08 INFO     Getting word of 7 length: NETEKTŲ
-2016-10-24T21:38:08 INFO     Getting letters of word: AKTYVIUS
-2016-10-24T21:38:08 INFO     Getting letters of word: IŠBĖGIOS
-2016-10-24T21:38:08 INFO     Getting letters of word: ĮDARDĖJO
-2016-10-24T21:38:08 INFO     Getting letters of word: PRŪSIŠKĄ
-2016-10-24T21:38:08 INFO     Getting letters of word: NETEKTŲ
-2016-10-24T21:38:08 INFO     Performing turn 1
-2016-10-24T21:38:12 INFO     Goging: Down
-2016-10-24T21:38:12 INFO     Consuming letter A at 0:0
-2016-10-24T21:38:12 INFO     Checking word a for existance
-2016-10-24T21:38:12 INFO     Result:True
-2016-10-24T21:38:12 INFO     Performing turn 2
-2016-10-24T21:38:13 INFO     Goging: Right
-2016-10-24T21:38:13 INFO     Consuming letter K at 0:1
-2016-10-24T21:38:13 INFO     Checking word ak for existance
-2016-10-24T21:38:13 INFO     Result:True
-2016-10-24T21:38:13 INFO     Performing turn 3
-2016-10-24T21:38:13 INFO     Goging: Down
-2016-10-24T21:38:13 INFO     Consuming letter T at 1:1
-2016-10-24T21:38:13 INFO     Checking word akt for existance
-2016-10-24T21:38:13 INFO     Result:False
-2016-10-24T21:38:13 INFO     Performing turn 4
-2016-10-24T21:38:13 INFO     Goging: Right
-2016-10-24T21:38:13 INFO     Consuming letter Y at 1:2
-2016-10-24T21:38:13 INFO     Checking word akty for existance
-2016-10-24T21:38:13 INFO     Result:False
-2016-10-24T21:38:13 INFO     Performing turn 5
-2016-10-24T21:38:18 INFO     Goging: Up
-2016-10-24T21:38:18 INFO     Consuming letter V at 0:2
-2016-10-24T21:38:18 INFO     Checking word aktyv for existance
-2016-10-24T21:38:18 INFO     Result:False
-2016-10-24T21:38:18 INFO     Performing turn 6
-2016-10-24T21:38:18 INFO     Goging: Right
-2016-10-24T21:38:18 INFO     Consuming letter I at 0:3
-2016-10-24T21:38:18 INFO     Checking word aktyvi for existance
-2016-10-24T21:38:18 INFO     Result:True
-2016-10-24T21:38:18 INFO     Found good word. AKTYVI
-2016-10-24T21:38:18 INFO     Checking for word AKTYVI existance in path
-2016-10-24T21:38:18 INFO     Result: 
-2016-10-24T21:38:18 INFO     Performing turn 7
-2016-10-24T21:38:18 INFO     Goging: Down
-2016-10-24T21:38:18 INFO     Consuming letter U at 1:3
-2016-10-24T21:38:18 INFO     Checking word aktyviu for existance
-2016-10-24T21:38:18 INFO     Result:True
-2016-10-24T21:38:18 INFO     Found good word. AKTYVIU
-2016-10-24T21:38:18 INFO     Checking for word AKTYVIU existance in path
-2016-10-24T21:38:18 INFO     Result: 
-2016-10-24T21:38:18 INFO     Performing turn 8
-2016-10-24T21:38:20 INFO     Goging: Down
-2016-10-24T21:38:20 INFO     Consuming letter S at 2:3
-2016-10-24T21:38:20 INFO     Checking word aktyvius for existance
-2016-10-24T21:38:20 INFO     Result:True
-2016-10-24T21:38:20 INFO     Found good word. AKTYVIUS
-2016-10-24T21:38:20 INFO     Checking for word AKTYVIUS existance in path
-2016-10-24T21:38:20 INFO     Result: AKTYVIUS (20)
-2016-10-24T21:38:20 INFO     Found word in path: AKTYVIUS
-2016-10-24T21:38:20 INFO     Marking path word found: AKTYVIUS
-2016-10-24T21:38:20 INFO     Performing turn 9
-2016-10-24T21:38:23 INFO     Goging: Left
-2016-10-24T21:38:23 INFO     Consuming letter I at 2:2
-2016-10-24T21:38:23 INFO     Checking word i for existance
-2016-10-24T21:38:23 INFO     Result:True
-2016-10-24T21:38:23 INFO     Performing turn 10
-2016-10-24T21:38:23 INFO     Goging: Down
-2016-10-24T21:38:23 INFO     Consuming letter Š at 3:2
-2016-10-24T21:38:23 INFO     Checking word iš for existance
-2016-10-24T21:38:23 INFO     Result:True
-2016-10-24T21:38:23 INFO     Performing turn 11
-2016-10-24T21:38:24 INFO     Goging: Left
-2016-10-24T21:38:24 INFO     Consuming letter B at 3:1
-2016-10-24T21:38:24 INFO     Checking word išb for existance
-2016-10-24T21:38:24 INFO     Result:False
-2016-10-24T21:38:24 INFO     Performing turn 12
-2016-10-24T21:38:24 INFO     Goging: Down
-2016-10-24T21:38:24 INFO     Consuming letter Ė at 4:1
-2016-10-24T21:38:24 INFO     Checking word išbė for existance
-2016-10-24T21:38:24 INFO     Result:False
-2016-10-24T21:38:24 INFO     Performing turn 13
-2016-10-24T21:38:24 INFO     Goging: Left
-2016-10-24T21:38:24 INFO     Consuming letter G at 4:0
-2016-10-24T21:38:24 INFO     Checking word išbėg for existance
-2016-10-24T21:38:24 INFO     Result:True
-2016-10-24T21:38:24 INFO     Found good word. IŠBĖG
-2016-10-24T21:38:24 INFO     Checking for word IŠBĖG existance in path
-2016-10-24T21:38:24 INFO     Result: 
-2016-10-24T21:38:24 INFO     Performing turn 14
-2016-10-24T21:38:25 INFO     Goging: Down
-2016-10-24T21:38:25 INFO     Consuming letter I at 5:0
-2016-10-24T21:38:25 INFO     Checking word išbėgi for existance
-2016-10-24T21:38:25 INFO     Result:False
-2016-10-24T21:38:25 INFO     Performing turn 15
-2016-10-24T21:38:25 INFO     Goging: Down
-2016-10-24T21:38:25 INFO     Consuming letter O at 6:0
-2016-10-24T21:38:25 INFO     Checking word išbėgio for existance
-2016-10-24T21:38:25 INFO     Result:False
-2016-10-24T21:38:25 INFO     Performing turn 16
-2016-10-24T21:38:25 INFO     Goging: Right
-2016-10-24T21:38:25 INFO     Consuming letter S at 6:1
-2016-10-24T21:38:25 INFO     Checking word išbėgios for existance
-2016-10-24T21:38:25 INFO     Result:True
-2016-10-24T21:38:25 INFO     Found good word. IŠBĖGIOS
-2016-10-24T21:38:25 INFO     Checking for word IŠBĖGIOS existance in path
-2016-10-24T21:38:25 INFO     Result: IŠBĖGIOS (27)
-2016-10-24T21:38:25 INFO     Found word in path: IŠBĖGIOS
-2016-10-24T21:38:25 INFO     Marking path word found: IŠBĖGIOS
-2016-10-24T21:38:25 INFO     Performing turn 17
-2016-10-24T21:38:31 INFO     Goging: Right
-2016-10-24T21:38:31 INFO     Consuming letter Į at 6:2
-2016-10-24T21:38:31 INFO     Checking word į for existance
-2016-10-24T21:38:31 INFO     Result:True
-2016-10-24T21:38:31 INFO     Performing turn 18
-2016-10-24T21:38:31 INFO     Goging: Right
-2016-10-24T21:38:31 INFO     Consuming letter D at 6:3
-2016-10-24T21:38:31 INFO     Checking word įd for existance
-2016-10-24T21:38:31 INFO     Result:False
-2016-10-24T21:38:31 INFO     Performing turn 19
-2016-10-24T21:38:32 INFO     Goging: Right
-2016-10-24T21:38:32 INFO     Consuming letter A at 6:4
-2016-10-24T21:38:32 INFO     Checking word įda for existance
-2016-10-24T21:38:32 INFO     Result:False
-2016-10-24T21:38:32 INFO     Performing turn 20
-2016-10-24T21:38:32 INFO     Goging: Up
-2016-10-24T21:38:32 INFO     Consuming letter R at 5:4
-2016-10-24T21:38:32 INFO     Checking word įdar for existance
-2016-10-24T21:38:32 INFO     Result:False
-2016-10-24T21:38:32 INFO     Performing turn 21
-2016-10-24T21:38:40 INFO     Goging: Left
-2016-10-24T21:38:40 INFO     Consuming letter D at 5:3
-2016-10-24T21:38:40 INFO     Checking word įdard for existance
-2016-10-24T21:38:40 INFO     Result:False
-2016-10-24T21:38:40 INFO     Performing turn 22
-2016-10-24T21:38:40 INFO     Goging: Up
-2016-10-24T21:38:40 INFO     Consuming letter Ė at 4:3
-2016-10-24T21:38:40 INFO     Checking word įdardė for existance
-2016-10-24T21:38:40 INFO     Result:False
-2016-10-24T21:38:40 INFO     Performing turn 23
-2016-10-24T21:38:40 INFO     Goging: Up
-2016-10-24T21:38:40 INFO     Consuming letter J at 3:3
-2016-10-24T21:38:40 INFO     Checking word įdardėj for existance
-2016-10-24T21:38:40 INFO     Result:False
-2016-10-24T21:38:41 INFO     Performing turn 24
-2016-10-24T21:38:41 INFO     Goging: Right
-2016-10-24T21:38:41 INFO     Consuming letter O at 3:4
-2016-10-24T21:38:41 INFO     Checking word įdardėjo for existance
-2016-10-24T21:38:41 INFO     Result:True
-2016-10-24T21:38:41 INFO     Found good word. ĮDARDĖJO
-2016-10-24T21:38:41 INFO     Checking for word ĮDARDĖJO existance in path
-2016-10-24T21:38:41 INFO     Result: ĮDARDĖJO (30)
-2016-10-24T21:38:41 INFO     Found word in path: ĮDARDĖJO
-2016-10-24T21:38:41 INFO     Marking path word found: ĮDARDĖJO
-2016-10-24T21:38:41 INFO     Performing turn 25
-2016-10-24T21:38:43 INFO     Goging: Right
-2016-10-24T21:38:43 INFO     Consuming letter P at 3:5
-2016-10-24T21:38:43 INFO     Checking word p for existance
-2016-10-24T21:38:43 INFO     Result:True
-2016-10-24T21:38:43 INFO     Performing turn 26
-2016-10-24T21:38:43 INFO     Goging: Right
-2016-10-24T21:38:43 INFO     Consuming letter R at 3:6
-2016-10-24T21:38:43 INFO     Checking word pr for existance
-2016-10-24T21:38:43 INFO     Result:True
-2016-10-24T21:38:43 INFO     Performing turn 27
-2016-10-24T21:38:43 INFO     Goging: Right
-2016-10-24T21:38:43 INFO     Consuming letter Ū at 3:7
-2016-10-24T21:38:43 INFO     Checking word prū for existance
-2016-10-24T21:38:43 INFO     Result:False
-2016-10-24T21:38:43 INFO     Performing turn 28
-2016-10-24T21:38:44 INFO     Goging: Right
-2016-10-24T21:38:44 INFO     Consuming letter S at 3:8
-2016-10-24T21:38:44 INFO     Checking word prūs for existance
-2016-10-24T21:38:44 INFO     Result:False
-2016-10-24T21:38:44 INFO     Performing turn 29
-2016-10-24T21:38:44 INFO     Goging: Up
-2016-10-24T21:38:44 INFO     Consuming letter I at 2:8
-2016-10-24T21:38:44 INFO     Checking word prūsi for existance
-2016-10-24T21:38:44 INFO     Result:False
-2016-10-24T21:38:44 INFO     Performing turn 30
-2016-10-24T21:38:44 INFO     Goging: Right
-2016-10-24T21:38:44 INFO     Consuming letter Š at 2:9
-2016-10-24T21:38:44 INFO     Checking word prūsiš for existance
-2016-10-24T21:38:44 INFO     Result:False
-2016-10-24T21:38:45 INFO     Performing turn 31
-2016-10-24T21:38:45 INFO     Goging: Down
-2016-10-24T21:38:45 INFO     Consuming letter K at 3:9
-2016-10-24T21:38:45 INFO     Checking word prūsišk for existance
-2016-10-24T21:38:45 INFO     Result:False
-2016-10-24T21:38:45 INFO     Performing turn 32
-2016-10-24T21:38:45 INFO     Goging: Right
-2016-10-24T21:38:45 INFO     Consuming letter Ą at 3:10
-2016-10-24T21:38:45 INFO     Checking word prūsišką for existance
-2016-10-24T21:38:45 INFO     Result:True
-2016-10-24T21:38:45 INFO     Found good word. PRŪSIŠKĄ
-2016-10-24T21:38:45 INFO     Checking for word PRŪSIŠKĄ existance in path
-2016-10-24T21:38:45 INFO     Result: PRŪSIŠKĄ (30)
-2016-10-24T21:38:45 INFO     Found word in path: PRŪSIŠKĄ
-2016-10-24T21:38:45 INFO     Marking path word found: PRŪSIŠKĄ
-2016-10-24T21:38:45 INFO     Performing turn 33
-2016-10-24T21:38:47 INFO     Goging: Up
-2016-10-24T21:38:47 INFO     Consuming letter N at 2:10
-2016-10-24T21:38:47 INFO     Checking word n for existance
-2016-10-24T21:38:47 INFO     Result:True
-2016-10-24T21:38:47 INFO     Performing turn 34
-2016-10-24T21:38:47 INFO     Goging: Right
-2016-10-24T21:38:47 INFO     Consuming letter E at 2:11
-2016-10-24T21:38:47 INFO     Checking word ne for existance
-2016-10-24T21:38:47 INFO     Result:True
-2016-10-24T21:38:47 INFO     Performing turn 35
-2016-10-24T21:38:47 INFO     Goging: Up
-2016-10-24T21:38:47 INFO     Consuming letter T at 1:11
-2016-10-24T21:38:47 INFO     Checking word net for existance
-2016-10-24T21:38:47 INFO     Result:True
-2016-10-24T21:38:47 INFO     Found good word. NET
-2016-10-24T21:38:47 INFO     Checking for word NET existance in path
-2016-10-24T21:38:47 INFO     Result: 
-2016-10-24T21:38:47 INFO     Performing turn 36
-2016-10-24T21:38:48 INFO     Goging: Up
-2016-10-24T21:38:48 INFO     Consuming letter E at 0:11
-2016-10-24T21:38:48 INFO     Checking word nete for existance
-2016-10-24T21:38:48 INFO     Result:False
-2016-10-24T21:38:48 INFO     Performing turn 37
-2016-10-24T21:38:48 INFO     Goging: Right
-2016-10-24T21:38:48 INFO     Consuming letter K at 0:12
-2016-10-24T21:38:48 INFO     Checking word netek for existance
-2016-10-24T21:38:48 INFO     Result:False
-2016-10-24T21:38:48 INFO     Performing turn 38
-2016-10-24T21:38:51 INFO     Goging: Right
-2016-10-24T21:38:51 INFO     Consuming letter T at 0:13
-2016-10-24T21:38:51 INFO     Checking word netekt for existance
-2016-10-24T21:38:51 INFO     Result:False
-2016-10-24T21:38:51 INFO     Performing turn 39
-2016-10-24T21:38:52 INFO     Goging: Right
-2016-10-24T21:38:52 INFO     Consuming letter Ų at 0:14
-2016-10-24T21:38:52 INFO     Checking word netektų for existance
-2016-10-24T21:38:52 INFO     Result:True
-2016-10-24T21:38:52 INFO     Found good word. NETEKTŲ
-2016-10-24T21:38:52 INFO     Checking for word NETEKTŲ existance in path
-2016-10-24T21:38:52 INFO     Result: NETEKTŲ (16)
-2016-10-24T21:38:52 INFO     Found word in path: NETEKTŲ
-2016-10-24T21:38:52 INFO     Marking path word found: NETEKTŲ
-2016-10-24T21:38:52 INFO     Ending game
-2016-10-24T21:38:52 INFO     Game finished.
+2016-10-25T21:44:29 INFO     Program is starting
+2016-10-25T21:44:29 INFO     Setting language: EN
+2016-10-25T21:44:29 INFO     Starting game. Grid: 15:15. Language : EN
+2016-10-25T21:44:29 INFO     Reseting game
+2016-10-25T21:44:29 INFO     Requesting factory: DictionaryReaderFactory
+2016-10-25T21:44:29 INFO     Getting dictionary reader: ENDictionaryReader
+2016-10-25T21:44:29 INFO     Reading EN dictionary
+2016-10-25T21:44:29 INFO     Reading dictionary in EN_dictionary.txt
+2016-10-25T21:44:29 INFO     Reading words
+2016-10-25T21:44:29 INFO     354986 word(s) read
+2016-10-25T21:44:29 INFO     Reading letters
+2016-10-25T21:44:29 INFO     26 letter(s) read
+2016-10-25T21:44:29 INFO     Filling grid
+2016-10-25T21:44:29 INFO     Computing path...
+2016-10-25T21:44:29 INFO     Adding point to path: 0:0
+2016-10-25T21:44:29 INFO     Wrong point, going back: 0:-1
+2016-10-25T21:44:29 INFO     Adding point to path: 1:0
+2016-10-25T21:44:29 INFO     Wrong point, going back: 1:-1
+2016-10-25T21:44:29 INFO     Wrong point, going back: 0:0
+2016-10-25T21:44:29 INFO     Adding point to path: 2:0
+2016-10-25T21:44:29 INFO     Wrong point, going back: 1:0
+2016-10-25T21:44:29 INFO     Wrong point, going back: 2:-1
+2016-10-25T21:44:29 INFO     Adding point to path: 2:1
+2016-10-25T21:44:29 INFO     Adding point to path: 3:1
+2016-10-25T21:44:29 INFO     Adding point to path: 3:0
+2016-10-25T21:44:29 INFO     Wrong point, going back: 2:0
+2016-10-25T21:44:29 INFO     Wrong point, going back: 3:-1
+2016-10-25T21:44:29 INFO     Adding point to path: 4:0
+2016-10-25T21:44:29 INFO     Adding point to path: 4:1
+2016-10-25T21:44:29 INFO     Adding point to path: 5:1
+2016-10-25T21:44:30 INFO     Adding point to path: 6:1
+2016-10-25T21:44:30 INFO     Adding point to path: 6:2
+2016-10-25T21:44:30 INFO     Wrong point, going back: 6:1
+2016-10-25T21:44:30 INFO     Adding point to path: 6:3
+2016-10-25T21:44:30 INFO     Adding point to path: 5:3
+2016-10-25T21:44:30 INFO     Adding point to path: 4:3
+2016-10-25T21:44:30 INFO     Wrong point, going back: 5:3
+2016-10-25T21:44:30 INFO     Adding point to path: 3:3
+2016-10-25T21:44:30 INFO     Adding point to path: 3:4
+2016-10-25T21:44:30 INFO     Wrong point, going back: 3:3
+2016-10-25T21:44:30 INFO     Adding point to path: 4:4
+2016-10-25T21:44:30 INFO     Wrong point, going back: 3:4
+2016-10-25T21:44:30 INFO     Adding point to path: 5:4
+2016-10-25T21:44:30 INFO     Adding point to path: 6:4
+2016-10-25T21:44:30 INFO     Adding point to path: 7:4
+2016-10-25T21:44:30 INFO     Adding point to path: 7:3
+2016-10-25T21:44:30 INFO     Adding point to path: 8:3
+2016-10-25T21:44:30 INFO     Adding point to path: 8:2
+2016-10-25T21:44:30 INFO     Adding point to path: 9:2
+2016-10-25T21:44:30 INFO     Wrong point, going back: 8:2
+2016-10-25T21:44:30 INFO     Adding point to path: 9:1
+2016-10-25T21:44:30 INFO     Adding point to path: 10:1
+2016-10-25T21:44:30 INFO     Adding point to path: 11:1
+2016-10-25T21:44:30 INFO     Adding point to path: 11:2
+2016-10-25T21:44:30 INFO     Adding point to path: 11:3
+2016-10-25T21:44:30 INFO     Adding point to path: 12:3
+2016-10-25T21:44:30 INFO     Adding point to path: 13:3
+2016-10-25T21:44:30 INFO     Adding point to path: 13:4
+2016-10-25T21:44:30 INFO     Adding point to path: 13:5
+2016-10-25T21:44:30 INFO     Wrong point, going back: 13:4
+2016-10-25T21:44:30 INFO     Adding point to path: 12:5
+2016-10-25T21:44:30 INFO     Adding point to path: 11:5
+2016-10-25T21:44:30 INFO     Wrong point, going back: 12:5
+2016-10-25T21:44:30 INFO     Adding point to path: 10:5
+2016-10-25T21:44:30 INFO     Wrong point, going back: 11:5
+2016-10-25T21:44:30 INFO     Adding point to path: 9:5
+2016-10-25T21:44:30 INFO     Adding point to path: 8:5
+2016-10-25T21:44:30 INFO     Adding point to path: 8:6
+2016-10-25T21:44:30 INFO     Adding point to path: 9:6
+2016-10-25T21:44:30 INFO     Wrong point, going back: 9:5
+2016-10-25T21:44:30 INFO     Wrong point, going back: 8:6
+2016-10-25T21:44:30 INFO     Adding point to path: 10:6
+2016-10-25T21:44:30 INFO     Wrong point, going back: 9:6
+2016-10-25T21:44:30 INFO     Wrong point, going back: 10:5
+2016-10-25T21:44:30 INFO     Adding point to path: 10:7
+2016-10-25T21:44:30 INFO     Wrong point, going back: 10:6
+2016-10-25T21:44:30 INFO     Adding point to path: 9:7
+2016-10-25T21:44:30 INFO     Wrong point, going back: 9:6
+2016-10-25T21:44:30 INFO     Wrong point, going back: 10:7
+2016-10-25T21:44:30 INFO     Adding point to path: 8:7
+2016-10-25T21:44:30 INFO     Wrong point, going back: 8:6
+2016-10-25T21:44:30 INFO     Adding point to path: 7:7
+2016-10-25T21:44:30 INFO     Adding point to path: 7:8
+2016-10-25T21:44:30 INFO     Adding point to path: 8:8
+2016-10-25T21:44:30 INFO     Wrong point, going back: 8:7
+2016-10-25T21:44:30 INFO     Adding point to path: 9:8
+2016-10-25T21:44:30 INFO     Wrong point, going back: 9:7
+2016-10-25T21:44:30 INFO     Adding point to path: 10:8
+2016-10-25T21:44:30 INFO     Wrong point, going back: 10:7
+2016-10-25T21:44:30 INFO     Adding point to path: 10:9
+2016-10-25T21:44:30 INFO     Wrong point, going back: 10:8
+2016-10-25T21:44:30 INFO     Adding point to path: 10:10
+2016-10-25T21:44:30 INFO     Adding point to path: 9:10
+2016-10-25T21:44:30 INFO     Adding point to path: 9:11
+2016-10-25T21:44:30 INFO     Adding point to path: 9:12
+2016-10-25T21:44:30 INFO     Adding point to path: 9:13
+2016-10-25T21:44:30 INFO     Found labyrinth end: 9:14
+2016-10-25T21:44:30 INFO     Path length: 56
+2016-10-25T21:44:30 INFO     Requesting factory: PathProviderFactory
+2016-10-25T21:44:30 INFO     Getting path words provider: DictionaryPathProvider
+2016-10-25T21:44:30 INFO     Getting word of 8 length: CLOCKING
+2016-10-25T21:44:30 INFO     Getting word of 8 length: ARCHPOET
+2016-10-25T21:44:30 INFO     Getting word of 8 length: ZAPTIEHS
+2016-10-25T21:44:30 INFO     Getting word of 8 length: RESHARED
+2016-10-25T21:44:30 INFO     Getting word of 8 length: BARRAGED
+2016-10-25T21:44:30 INFO     Getting word of 8 length: ALGAROBA
+2016-10-25T21:44:30 INFO     Getting word of 8 length: KORSAKOW
+2016-10-25T21:44:30 INFO     Getting letters of word: CLOCKING
+2016-10-25T21:44:30 INFO     Getting letters of word: ARCHPOET
+2016-10-25T21:44:30 INFO     Getting letters of word: ZAPTIEHS
+2016-10-25T21:44:30 INFO     Getting letters of word: RESHARED
+2016-10-25T21:44:30 INFO     Getting letters of word: BARRAGED
+2016-10-25T21:44:30 INFO     Getting letters of word: ALGAROBA
+2016-10-25T21:44:30 INFO     Getting letters of word: KORSAKOW
+2016-10-25T21:44:30 INFO     Performing turn 1

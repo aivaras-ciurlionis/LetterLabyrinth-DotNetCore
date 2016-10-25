@@ -6,7 +6,7 @@ using System.Text;
 
 namespace OP_LetterLabyrinth
 {
-    public class LtDictionaryReader : IDictionaryReader
+    public class LTDictionaryReader : IDictionaryReader
     {
         private IEnumerable<string> _words = new List<string>();
         private IEnumerable<Letter> _letters = new List<Letter>();

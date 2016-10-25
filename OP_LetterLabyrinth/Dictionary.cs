@@ -17,12 +17,9 @@ namespace OP_LetterLabyrinth
         public Dictionary(Language language)
         {
             _language = language;
-
             IDictionaryReader reader;
-
             reader = WordsFactoryProducer.GetFactory(nameof(DictionaryReaderFactory))
                           .GetDictionaryReader($"{_language.GetLanguageName()}DictionaryReader");
-
             reader.ReadFile(_language.GetDictionaryLocation());
             _words = reader.GetAllWords();
             _letters.AddRange(reader.GetAllLetters().ToList());

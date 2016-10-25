@@ -17,6 +17,7 @@ namespace OP_LetterLabyrinth
             {
                 dictionary.AddBadWord(word);
             }
+            // if exists - add points, if not - remove points
             GameStatus.GetInstance().ConsumeCurrentWord(exists);
         }
     }

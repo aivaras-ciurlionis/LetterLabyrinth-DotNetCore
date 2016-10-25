@@ -24,7 +24,7 @@ namespace OP_LetterLabyrinth
             _currentPlayer = new Player(new Point { X = -1, Y = 0 });
             _sizeX = sizeX;
             _sizeY = sizeY;
-            _currentGrid = new LetterGrid(sizeX, sizeY, new SmartGridFiller(_currentDictionary, pathProviderName));
+            _currentGrid = new LetterGrid(_sizeX, _sizeY, new SmartGridFiller(_currentDictionary, pathProviderName));
             _input = input;
             _graphics = graphics;
             _graphics.DrawTurn(_currentPlayer, _currentGrid, _currentDictionary);

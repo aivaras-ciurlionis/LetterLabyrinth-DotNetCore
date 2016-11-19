@@ -9,7 +9,7 @@ namespace OP_LetterLabyrinth
             _strategy = strategy;
         }
 
-        public void ExecuteStrategy(Letter[] word, Dictionary dictionary)
+        public void ExecuteStrategy(ILetter[] word, Dictionary dictionary)
         {
             _strategy.DoOperation(word, dictionary);
         }

@@ -1,10 +1,10 @@
+using System;
 /**
- * @(#) Letter.cs
- */
-
+* @(#) Letter.cs
+*/
 namespace OP_LetterLabyrinth
 {
-    public class Letter
+    public class Letter : ILetter
     {
         private readonly string _letterName;
         private readonly int _letterPoints;
@@ -37,12 +37,15 @@ namespace OP_LetterLabyrinth
             return new Letter("*", 0, 0);
         }
 
-        public static Letter Path()
+        public ConsoleColor GetRenderColor()
         {
-            return new Letter("X", 0, 0);
+            return ConsoleColor.White;
         }
 
-
+        public string GetRenderName()
+        {
+            return _letterName;
+        }
     }
 }
 

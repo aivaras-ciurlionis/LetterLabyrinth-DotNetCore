@@ -3,7 +3,7 @@ namespace OP_LetterLabyrinth
 
     public interface IWordStrategy
     {
-        void DoOperation(Letter[] word, Dictionary Dictionary);
+        void DoOperation(ILetter[] word, Dictionary Dictionary);
     }
 
 }

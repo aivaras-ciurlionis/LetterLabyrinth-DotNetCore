@@ -4,7 +4,6 @@
 
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
 using System.Text;
 
@@ -14,7 +13,7 @@ namespace OP_LetterLabyrinth
     {
         private int _sizeX;
         private int _sizeY;
-        private List<List<Letter>> _letters = new List<List<Letter>>();
+        private List<List<ILetter>> _letters = new List<List<ILetter>>();
 
         public LetterGrid(int sizeX, int sizeY, IGridFiller filler)
         {
@@ -25,7 +24,7 @@ namespace OP_LetterLabyrinth
             _sizeY = sizeY;
         }
 
-        public Letter ConsumeLetterAt(Point point)
+        public ILetter ConsumeLetterAt(Point point)
         {
             var consumedLetter = _letters[point.X][point.Y];
             _letters[point.X][point.Y] = Letter.Empty();
@@ -38,6 +37,19 @@ namespace OP_LetterLabyrinth
             return point.X > -1 && point.Y > -1 && point.X < _sizeX && point.Y < _sizeY;
         }
 
+        public void Print()
+        {
+            foreach (var row in _letters)
+            {
+                foreach (var letter in row)
+                {
+                    Console.ForegroundColor = letter.GetRenderColor();
+                    Console.Write(letter.GetRenderName() + " ");
+                }
+                Console.WriteLine();
+            }
+        }
+
         public override string ToString()
         {
             var matrix = new StringBuilder();
@@ -45,13 +57,11 @@ namespace OP_LetterLabyrinth
             {
                 foreach (var letter in row)
                 {
-                    matrix.Append(letter.GetName() + " ");
+                    matrix.Append(letter.GetRenderName() + " ");
                 }
                 matrix.Append(Environment.NewLine);
             }
             return matrix.ToString();
         }
-
-
     }
 }

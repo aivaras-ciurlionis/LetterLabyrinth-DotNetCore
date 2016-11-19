@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.InteropServices;
 
 namespace OP_LetterLabyrinth
 {
@@ -55,7 +54,7 @@ namespace OP_LetterLabyrinth
             _pathProviderName = providerName;
         }
 
-        public override List<List<Letter>> GetLetters(int sizeX, int sizeY)
+        public override List<List<ILetter>> GetLetters(int sizeX, int sizeY)
         {
             _sizeX = sizeX;
             _sizeY = sizeY;
@@ -78,7 +77,7 @@ namespace OP_LetterLabyrinth
                           .GetPathWordsProvider(pathProvider)
                           .GetPathWords(path.Count, Dictionary);
 
-            var letterWords = new List<Letter[]>();
+            var letterWords = new List<ILetter[]>();
             var pointNumber = 0;
             foreach (var word in words)
             {

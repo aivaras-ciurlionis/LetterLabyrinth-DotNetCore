@@ -8,6 +8,6 @@ namespace OP_LetterLabyrinth
     {
         void ReadFile(string languageFilePath);
         string[] GetAllWords();
-        Letter[] GetAllLetters();
+        ILetter[] GetAllLetters();
     }
 }

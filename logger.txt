@@ -1,115 +1,180 @@
-2016-10-25T21:44:29 INFO     Program is starting
-2016-10-25T21:44:29 INFO     Setting language: EN
-2016-10-25T21:44:29 INFO     Starting game. Grid: 15:15. Language : EN
-2016-10-25T21:44:29 INFO     Reseting game
-2016-10-25T21:44:29 INFO     Requesting factory: DictionaryReaderFactory
-2016-10-25T21:44:29 INFO     Getting dictionary reader: ENDictionaryReader
-2016-10-25T21:44:29 INFO     Reading EN dictionary
-2016-10-25T21:44:29 INFO     Reading dictionary in EN_dictionary.txt
-2016-10-25T21:44:29 INFO     Reading words
-2016-10-25T21:44:29 INFO     354986 word(s) read
-2016-10-25T21:44:29 INFO     Reading letters
-2016-10-25T21:44:29 INFO     26 letter(s) read
-2016-10-25T21:44:29 INFO     Filling grid
-2016-10-25T21:44:29 INFO     Computing path...
-2016-10-25T21:44:29 INFO     Adding point to path: 0:0
-2016-10-25T21:44:29 INFO     Wrong point, going back: 0:-1
-2016-10-25T21:44:29 INFO     Adding point to path: 1:0
-2016-10-25T21:44:29 INFO     Wrong point, going back: 1:-1
-2016-10-25T21:44:29 INFO     Wrong point, going back: 0:0
-2016-10-25T21:44:29 INFO     Adding point to path: 2:0
-2016-10-25T21:44:29 INFO     Wrong point, going back: 1:0
-2016-10-25T21:44:29 INFO     Wrong point, going back: 2:-1
-2016-10-25T21:44:29 INFO     Adding point to path: 2:1
-2016-10-25T21:44:29 INFO     Adding point to path: 3:1
-2016-10-25T21:44:29 INFO     Adding point to path: 3:0
-2016-10-25T21:44:29 INFO     Wrong point, going back: 2:0
-2016-10-25T21:44:29 INFO     Wrong point, going back: 3:-1
-2016-10-25T21:44:29 INFO     Adding point to path: 4:0
-2016-10-25T21:44:29 INFO     Adding point to path: 4:1
-2016-10-25T21:44:29 INFO     Adding point to path: 5:1
-2016-10-25T21:44:30 INFO     Adding point to path: 6:1
-2016-10-25T21:44:30 INFO     Adding point to path: 6:2
-2016-10-25T21:44:30 INFO     Wrong point, going back: 6:1
-2016-10-25T21:44:30 INFO     Adding point to path: 6:3
-2016-10-25T21:44:30 INFO     Adding point to path: 5:3
-2016-10-25T21:44:30 INFO     Adding point to path: 4:3
-2016-10-25T21:44:30 INFO     Wrong point, going back: 5:3
-2016-10-25T21:44:30 INFO     Adding point to path: 3:3
-2016-10-25T21:44:30 INFO     Adding point to path: 3:4
-2016-10-25T21:44:30 INFO     Wrong point, going back: 3:3
-2016-10-25T21:44:30 INFO     Adding point to path: 4:4
-2016-10-25T21:44:30 INFO     Wrong point, going back: 3:4
-2016-10-25T21:44:30 INFO     Adding point to path: 5:4
-2016-10-25T21:44:30 INFO     Adding point to path: 6:4
-2016-10-25T21:44:30 INFO     Adding point to path: 7:4
-2016-10-25T21:44:30 INFO     Adding point to path: 7:3
-2016-10-25T21:44:30 INFO     Adding point to path: 8:3
-2016-10-25T21:44:30 INFO     Adding point to path: 8:2
-2016-10-25T21:44:30 INFO     Adding point to path: 9:2
-2016-10-25T21:44:30 INFO     Wrong point, going back: 8:2
-2016-10-25T21:44:30 INFO     Adding point to path: 9:1
-2016-10-25T21:44:30 INFO     Adding point to path: 10:1
-2016-10-25T21:44:30 INFO     Adding point to path: 11:1
-2016-10-25T21:44:30 INFO     Adding point to path: 11:2
-2016-10-25T21:44:30 INFO     Adding point to path: 11:3
-2016-10-25T21:44:30 INFO     Adding point to path: 12:3
-2016-10-25T21:44:30 INFO     Adding point to path: 13:3
-2016-10-25T21:44:30 INFO     Adding point to path: 13:4
-2016-10-25T21:44:30 INFO     Adding point to path: 13:5
-2016-10-25T21:44:30 INFO     Wrong point, going back: 13:4
-2016-10-25T21:44:30 INFO     Adding point to path: 12:5
-2016-10-25T21:44:30 INFO     Adding point to path: 11:5
-2016-10-25T21:44:30 INFO     Wrong point, going back: 12:5
-2016-10-25T21:44:30 INFO     Adding point to path: 10:5
-2016-10-25T21:44:30 INFO     Wrong point, going back: 11:5
-2016-10-25T21:44:30 INFO     Adding point to path: 9:5
-2016-10-25T21:44:30 INFO     Adding point to path: 8:5
-2016-10-25T21:44:30 INFO     Adding point to path: 8:6
-2016-10-25T21:44:30 INFO     Adding point to path: 9:6
-2016-10-25T21:44:30 INFO     Wrong point, going back: 9:5
-2016-10-25T21:44:30 INFO     Wrong point, going back: 8:6
-2016-10-25T21:44:30 INFO     Adding point to path: 10:6
-2016-10-25T21:44:30 INFO     Wrong point, going back: 9:6
-2016-10-25T21:44:30 INFO     Wrong point, going back: 10:5
-2016-10-25T21:44:30 INFO     Adding point to path: 10:7
-2016-10-25T21:44:30 INFO     Wrong point, going back: 10:6
-2016-10-25T21:44:30 INFO     Adding point to path: 9:7
-2016-10-25T21:44:30 INFO     Wrong point, going back: 9:6
-2016-10-25T21:44:30 INFO     Wrong point, going back: 10:7
-2016-10-25T21:44:30 INFO     Adding point to path: 8:7
-2016-10-25T21:44:30 INFO     Wrong point, going back: 8:6
-2016-10-25T21:44:30 INFO     Adding point to path: 7:7
-2016-10-25T21:44:30 INFO     Adding point to path: 7:8
-2016-10-25T21:44:30 INFO     Adding point to path: 8:8
-2016-10-25T21:44:30 INFO     Wrong point, going back: 8:7
-2016-10-25T21:44:30 INFO     Adding point to path: 9:8
-2016-10-25T21:44:30 INFO     Wrong point, going back: 9:7
-2016-10-25T21:44:30 INFO     Adding point to path: 10:8
-2016-10-25T21:44:30 INFO     Wrong point, going back: 10:7
-2016-10-25T21:44:30 INFO     Adding point to path: 10:9
-2016-10-25T21:44:30 INFO     Wrong point, going back: 10:8
-2016-10-25T21:44:30 INFO     Adding point to path: 10:10
-2016-10-25T21:44:30 INFO     Adding point to path: 9:10
-2016-10-25T21:44:30 INFO     Adding point to path: 9:11
-2016-10-25T21:44:30 INFO     Adding point to path: 9:12
-2016-10-25T21:44:30 INFO     Adding point to path: 9:13
-2016-10-25T21:44:30 INFO     Found labyrinth end: 9:14
-2016-10-25T21:44:30 INFO     Path length: 56
-2016-10-25T21:44:30 INFO     Requesting factory: PathProviderFactory
-2016-10-25T21:44:30 INFO     Getting path words provider: DictionaryPathProvider
-2016-10-25T21:44:30 INFO     Getting word of 8 length: CLOCKING
-2016-10-25T21:44:30 INFO     Getting word of 8 length: ARCHPOET
-2016-10-25T21:44:30 INFO     Getting word of 8 length: ZAPTIEHS
-2016-10-25T21:44:30 INFO     Getting word of 8 length: RESHARED
-2016-10-25T21:44:30 INFO     Getting word of 8 length: BARRAGED
-2016-10-25T21:44:30 INFO     Getting word of 8 length: ALGAROBA
-2016-10-25T21:44:30 INFO     Getting word of 8 length: KORSAKOW
-2016-10-25T21:44:30 INFO     Getting letters of word: CLOCKING
-2016-10-25T21:44:30 INFO     Getting letters of word: ARCHPOET
-2016-10-25T21:44:30 INFO     Getting letters of word: ZAPTIEHS
-2016-10-25T21:44:30 INFO     Getting letters of word: RESHARED
-2016-10-25T21:44:30 INFO     Getting letters of word: BARRAGED
-2016-10-25T21:44:30 INFO     Getting letters of word: ALGAROBA
-2016-10-25T21:44:30 INFO     Getting letters of word: KORSAKOW
-2016-10-25T21:44:30 INFO     Performing turn 1
+2016-11-19T15:17:36 INFO     Program is starting
+2016-11-19T15:17:36 INFO     Setting language: EN
+2016-11-19T15:17:36 INFO     Starting game. Grid: 15:15. Language : EN
+2016-11-19T15:17:36 INFO     Reseting game
+2016-11-19T15:17:36 INFO     Requesting factory: DictionaryReaderFactory
+2016-11-19T15:17:36 INFO     Getting dictionary reader: ENDictionaryReader
+2016-11-19T15:17:37 INFO     Reading EN dictionary
+2016-11-19T15:17:37 INFO     Reading dictionary in EN_dictionary.txt
+2016-11-19T15:17:37 INFO     Reading words
+2016-11-19T15:17:37 INFO     354986 word(s) read
+2016-11-19T15:17:37 INFO     Reading letters
+2016-11-19T15:17:37 INFO     26 letter(s) read
+2016-11-19T15:17:37 INFO     Filling grid
+2016-11-19T15:17:37 INFO     Computing path...
+2016-11-19T15:17:37 INFO     Adding point to path: 0:0
+2016-11-19T15:17:37 INFO     Adding point to path: 1:0
+2016-11-19T15:17:37 INFO     Wrong point, going back: 1:-1
+2016-11-19T15:17:37 INFO     Adding point to path: 2:0
+2016-11-19T15:17:37 INFO     Wrong point, going back: 2:-1
+2016-11-19T15:17:37 INFO     Adding point to path: 3:0
+2016-11-19T15:17:37 INFO     Adding point to path: 4:0
+2016-11-19T15:17:37 INFO     Wrong point, going back: 4:-1
+2016-11-19T15:17:37 INFO     Adding point to path: 5:0
+2016-11-19T15:17:37 INFO     Adding point to path: 6:0
+2016-11-19T15:17:37 INFO     Wrong point, going back: 6:-1
+2016-11-19T15:17:37 INFO     Wrong point, going back: 5:0
+2016-11-19T15:17:37 INFO     Adding point to path: 7:0
+2016-11-19T15:17:37 INFO     Adding point to path: 7:1
+2016-11-19T15:17:37 INFO     Adding point to path: 8:1
+2016-11-19T15:17:37 INFO     Adding point to path: 8:2
+2016-11-19T15:17:37 INFO     Adding point to path: 7:2
+2016-11-19T15:17:37 INFO     Adding point to path: 7:3
+2016-11-19T15:17:37 INFO     Wrong point, going back: 7:2
+2016-11-19T15:17:37 INFO     Adding point to path: 8:3
+2016-11-19T15:17:37 INFO     Adding point to path: 9:3
+2016-11-19T15:17:37 INFO     Adding point to path: 10:3
+2016-11-19T15:17:37 INFO     Adding point to path: 10:2
+2016-11-19T15:17:37 INFO     Adding point to path: 11:2
+2016-11-19T15:17:37 INFO     Adding point to path: 11:3
+2016-11-19T15:17:37 INFO     Adding point to path: 12:3
+2016-11-19T15:17:37 INFO     Adding point to path: 12:2
+2016-11-19T15:17:37 INFO     Wrong point, going back: 11:2
+2016-11-19T15:17:37 INFO     Adding point to path: 12:1
+2016-11-19T15:17:37 INFO     Adding point to path: 13:1
+2016-11-19T15:17:37 INFO     Adding point to path: 13:2
+2016-11-19T15:17:37 INFO     Wrong point, going back: 13:1
+2016-11-19T15:17:37 INFO     Adding point to path: 13:3
+2016-11-19T15:17:37 INFO     Found labyrinth end: 14:3
+2016-11-19T15:17:37 INFO     Path length: 26
+2016-11-19T15:17:37 INFO     Requesting factory: PathProviderFactory
+2016-11-19T15:17:37 INFO     Getting path words provider: DictionaryPathProvider
+2016-11-19T15:17:37 INFO     Getting word of 7 length: GHAFFIR
+2016-11-19T15:17:37 INFO     Getting word of 7 length: ALYSSON
+2016-11-19T15:17:37 INFO     Getting word of 7 length: EXCEEDS
+2016-11-19T15:17:37 INFO     Getting word of 5 length: MUSTH
+2016-11-19T15:17:37 INFO     Getting letters of word: GHAFFIR
+2016-11-19T15:17:37 INFO     Getting letters of word: ALYSSON
+2016-11-19T15:17:37 INFO     Getting letters of word: EXCEEDS
+2016-11-19T15:17:37 INFO     Getting letters of word: MUSTH
+2016-11-19T15:17:37 INFO     Performing turn 1
+2016-11-19T15:17:42 INFO     Goging: Down
+2016-11-19T15:17:42 INFO     Consuming letter G at 0:0
+2016-11-19T15:17:42 INFO     Checking word g for existance
+2016-11-19T15:17:42 INFO     Result:True
+2016-11-19T15:17:42 INFO     Performing turn 2
+2016-11-19T15:17:42 INFO     Goging: Down
+2016-11-19T15:17:42 INFO     Consuming letter H at 1:0
+2016-11-19T15:17:42 INFO     Checking word gh for existance
+2016-11-19T15:17:42 INFO     Result:False
+2016-11-19T15:17:42 INFO     Performing turn 3
+2016-11-19T15:17:44 INFO     Goging: Down
+2016-11-19T15:17:44 INFO     Consuming letter A at 2:0
+2016-11-19T15:17:44 INFO     Checking word gha for existance
+2016-11-19T15:17:44 INFO     Result:False
+2016-11-19T15:17:44 INFO     Performing turn 4
+2016-11-19T15:17:44 INFO     Goging: Down
+2016-11-19T15:17:44 INFO     Consuming letter F at 3:0
+2016-11-19T15:17:44 INFO     Checking word ghaf for existance
+2016-11-19T15:17:44 INFO     Result:False
+2016-11-19T15:17:44 INFO     Performing turn 5
+2016-11-19T15:17:44 INFO     Goging: Down
+2016-11-19T15:17:44 INFO     Consuming letter F at 4:0
+2016-11-19T15:17:44 INFO     Checking word ghaff for existance
+2016-11-19T15:17:44 INFO     Result:False
+2016-11-19T15:17:44 INFO     Performing turn 6
+2016-11-19T15:17:45 INFO     Goging: Down
+2016-11-19T15:17:45 INFO     Consuming letter I at 5:0
+2016-11-19T15:17:45 INFO     Checking word ghaffi for existance
+2016-11-19T15:17:45 INFO     Result:False
+2016-11-19T15:17:45 INFO     Performing turn 7
+2016-11-19T15:17:45 INFO     Goging: Down
+2016-11-19T15:17:45 INFO     Consuming letter R at 6:0
+2016-11-19T15:17:45 INFO     Checking word ghaffir for existance
+2016-11-19T15:17:45 INFO     Result:True
+2016-11-19T15:17:45 INFO     Found good word. GHAFFIR
+2016-11-19T15:17:45 INFO     Checking for word GHAFFIR existance in path
+2016-11-19T15:17:45 INFO     Result: GHAFFIR (27)
+2016-11-19T15:17:45 INFO     Found word in path: GHAFFIR
+2016-11-19T15:17:45 INFO     Marking path word found: GHAFFIR
+2016-11-19T15:17:45 INFO     Performing turn 8
+2016-11-19T15:17:47 INFO     Goging: Down
+2016-11-19T15:17:47 INFO     Consuming letter A at 7:0
+2016-11-19T15:17:47 INFO     Checking word a for existance
+2016-11-19T15:17:47 INFO     Result:True
+2016-11-19T15:17:47 INFO     Performing turn 9
+2016-11-19T15:17:47 INFO     Goging: Right
+2016-11-19T15:17:47 INFO     Consuming letter L at 7:1
+2016-11-19T15:17:47 INFO     Checking word al for existance
+2016-11-19T15:17:47 INFO     Result:True
+2016-11-19T15:17:47 INFO     Performing turn 10
+2016-11-19T15:17:49 INFO     Goging: Right
+2016-11-19T15:17:49 INFO     Consuming letter S at 7:2
+2016-11-19T15:17:49 INFO     Checking word als for existance
+2016-11-19T15:17:49 INFO     Result:True
+2016-11-19T15:17:49 INFO     Found good word. ALS
+2016-11-19T15:17:49 INFO     Checking for word ALS existance in path
+2016-11-19T15:17:49 INFO     Result: 
+2016-11-19T15:17:49 INFO     Performing turn 11
+2016-11-19T15:17:50 INFO     Goging: Right
+2016-11-19T15:17:50 INFO     Consuming letter O at 7:3
+2016-11-19T15:17:50 INFO     Checking word also for existance
+2016-11-19T15:17:50 INFO     Result:True
+2016-11-19T15:17:50 INFO     Found good word. ALSO
+2016-11-19T15:17:50 INFO     Checking for word ALSO existance in path
+2016-11-19T15:17:50 INFO     Result: 
+2016-11-19T15:17:50 INFO     Performing turn 12
+2016-11-19T15:17:50 INFO     Goging: Right
+2016-11-19T15:17:50 INFO     Consuming letter R at 7:4
+2016-11-19T15:17:50 INFO     Checking word alsor for existance
+2016-11-19T15:17:50 INFO     Result:False
+2016-11-19T15:17:50 INFO     Added bad word. ALSOR
+2016-11-19T15:17:50 INFO     Performing turn 13
+2016-11-19T15:17:53 INFO     Goging: Down
+2016-11-19T15:17:53 INFO     Consuming letter E at 8:4
+2016-11-19T15:17:53 INFO     Checking word e for existance
+2016-11-19T15:17:53 INFO     Result:True
+2016-11-19T15:17:53 INFO     Performing turn 14
+2016-11-19T15:17:54 INFO     Goging: Down
+2016-11-19T15:17:54 INFO     Consuming letter N at 9:4
+2016-11-19T15:17:54 INFO     Checking word en for existance
+2016-11-19T15:17:54 INFO     Result:True
+2016-11-19T15:17:54 INFO     Performing turn 15
+2016-11-19T15:17:57 INFO     Goging: Drop
+2016-11-19T15:17:57 INFO     Dropping word. EN
+2016-11-19T15:17:57 INFO     Checking word en for existance
+2016-11-19T15:17:57 INFO     Result:True
+2016-11-19T15:17:57 INFO     Performing turn 16
+2016-11-19T15:18:12 INFO     Goging: Right
+2016-11-19T15:18:12 INFO     Consuming letter E at 9:5
+2016-11-19T15:18:13 INFO     Checking word e for existance
+2016-11-19T15:18:13 INFO     Result:True
+2016-11-19T15:18:13 INFO     Performing turn 17
+2016-11-19T15:18:13 INFO     Goging: Down
+2016-11-19T15:18:13 INFO     Consuming letter B at 10:5
+2016-11-19T15:18:13 INFO     Checking word eb for existance
+2016-11-19T15:18:13 INFO     Result:False
+2016-11-19T15:18:13 INFO     Performing turn 18
+2016-11-19T15:18:13 INFO     Goging: Down
+2016-11-19T15:18:13 INFO     Consuming letter I at 11:5
+2016-11-19T15:18:13 INFO     Checking word ebi for existance
+2016-11-19T15:18:13 INFO     Result:False
+2016-11-19T15:18:13 INFO     Performing turn 19
+2016-11-19T15:18:14 INFO     Goging: Down
+2016-11-19T15:18:14 INFO     Consuming letter T at 12:5
+2016-11-19T15:18:14 INFO     Checking word ebit for existance
+2016-11-19T15:18:14 INFO     Result:False
+2016-11-19T15:18:14 INFO     Added bad word. EBIT
+2016-11-19T15:18:14 INFO     Performing turn 20
+2016-11-19T15:18:16 INFO     Goging: Down
+2016-11-19T15:18:16 INFO     Consuming letter N at 13:5
+2016-11-19T15:18:16 INFO     Checking word n for existance
+2016-11-19T15:18:16 INFO     Result:True
+2016-11-19T15:18:16 INFO     Performing turn 21
+2016-11-19T15:18:18 INFO     Goging: Down
+2016-11-19T15:18:18 INFO     Consuming letter W at 14:5
+2016-11-19T15:18:18 INFO     Checking word nw for existance
+2016-11-19T15:18:18 INFO     Result:False
+2016-11-19T15:18:18 INFO     Added bad word. NW
+2016-11-19T15:18:18 INFO     Ending game
+2016-11-19T15:18:18 INFO     Game finished.

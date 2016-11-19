@@ -4,7 +4,7 @@ namespace OP_LetterLabyrinth
 {
     public class StrategyAddGoodWord : IWordStrategy
     {
-        public void DoOperation(Letter[] word, Dictionary dictionary)
+        public void DoOperation(ILetter[] word, Dictionary dictionary)
         {
             var stringWord = Dictionary.StringFromLetters(word);
             Logger.GetInstance().Log("INFO", $"Found good word. {stringWord}");

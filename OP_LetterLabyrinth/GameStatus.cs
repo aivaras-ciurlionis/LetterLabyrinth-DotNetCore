@@ -9,11 +9,11 @@ namespace OP_LetterLabyrinth
         private static GameStatus _instance;
         private Language _currentLanguage;
         private int _points;
-        private List<Letter> _currentWord = new List<Letter>();
+        private List<ILetter> _currentWord = new List<ILetter>();
 
         private GameStatus()
         {
-            _currentWord = new List<Letter>();
+            _currentWord = new List<ILetter>();
             _points = 0;
         }
 
@@ -32,21 +32,31 @@ namespace OP_LetterLabyrinth
             return _points += points;
         }
 
-        public void AddLetter(Letter letter)
+        public void AddLetter(ILetter letter)
         {
             _currentWord.Add(letter);
         }
 
-        public Letter[] ClearCurrentWord()
+        public ILetter[] ClearCurrentWord()
         {
             var word = _currentWord.ToArray();
             _currentWord.Clear();
             return word;
         }
 
+        private int GetWordPoints()
+        {
+            return _currentWord.Sum(l => l.GetPoints());
+        }
+
+        private string GetWordLetterPoints()
+        {
+            return _currentWord.Aggregate("", (a, b) => $"{a}{b.GetPoints()} ");
+        }
+
         public void AddPointsForCurrentWord(bool positivePoints)
         {
-            var wordPoints = _currentWord.Sum(l => l.GetPoints());
+            var wordPoints = GetWordPoints();
             AddPoints(positivePoints ? wordPoints : -wordPoints);
         }
 
@@ -61,7 +71,7 @@ namespace OP_LetterLabyrinth
             _points = 0;
         }
 
-        public Letter[] GetCurrentWord()
+        public ILetter[] GetCurrentWord()
         {
             return _currentWord.ToArray();
         }
@@ -71,7 +81,7 @@ namespace OP_LetterLabyrinth
             var currentWord = _currentWord.Aggregate("", (s, letter) => s += letter.GetName().ToUpper());
             var languageName = _currentLanguage.GetLanguageName().ToUpper();
             return $"Current language: {languageName} {Environment.NewLine}" +
-                   $"Current word: {currentWord} {Environment.NewLine} " +
+                   $"Current word: {currentWord} ({GetWordLetterPoints()}) {Environment.NewLine} " +
                    $"Points: {_points} {Environment.NewLine}";
         }
 

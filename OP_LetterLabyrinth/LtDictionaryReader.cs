@@ -9,7 +9,7 @@ namespace OP_LetterLabyrinth
     public class LTDictionaryReader : IDictionaryReader
     {
         private IEnumerable<string> _words = new List<string>();
-        private IEnumerable<Letter> _letters = new List<Letter>();
+        private IEnumerable<ILetter> _letters = new List<ILetter>();
         public void ReadFile(string languageFilePath)
         {
             Logger.GetInstance().Log("INFO", $"Reading LT dictionary");
@@ -47,7 +47,7 @@ namespace OP_LetterLabyrinth
             return _words.ToArray();
         }
 
-        public Letter[] GetAllLetters()
+        public ILetter[] GetAllLetters()
         {
             return _letters.ToArray();
         }

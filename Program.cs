@@ -4,7 +4,6 @@ namespace OP_LetterLabyrinth
 {
     class Program
     {
-
         private static LanguageName GetLanguageFromArguments(string[] args)
         {
             if (args.Length > 0)

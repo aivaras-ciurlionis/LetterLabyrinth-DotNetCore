@@ -9,8 +9,8 @@ namespace OP_LetterLabyrinth
     public class ENDictionaryReader : IDictionaryReader
     {
         private string[] _words;
-        private List<Letter> _letters = new List<Letter>();
-        
+        private IEnumerable<ILetter> _letters = new List<ILetter>();
+
         public void ReadFile(string languageFilePath)
         {
             Logger.GetInstance().Log("INFO", $"Reading EN dictionary");
@@ -39,7 +39,7 @@ namespace OP_LetterLabyrinth
         {
             Logger.GetInstance().Log("INFO", "Reading letters");
             _letters = lines.Select(l => new Letter(l.Split()[0], int.Parse(l.Split()[1]), int.Parse(l.Split()[2]))).ToList();
-            Logger.GetInstance().Log("INFO", $"{_letters.Count} letter(s) read");
+            Logger.GetInstance().Log("INFO", $"{_letters.Count()} letter(s) read");
         }
 
         public string[] GetAllWords()
@@ -47,7 +47,7 @@ namespace OP_LetterLabyrinth
             return _words;
         }
 
-        public Letter[] GetAllLetters()
+        public ILetter[] GetAllLetters()
         {
             return _letters.ToArray();
         }

@@ -8,7 +8,7 @@ namespace OP_LetterLabyrinth
     {
         private readonly Language _language;
         private readonly string[] _words;
-        private List<Letter> _letters = new List<Letter>();
+        private List<ILetter> _letters = new List<ILetter>();
         private Random random = new Random();
         private List<FindableWord> _pathWords = new List<FindableWord>();
         private List<FindableWord> _goodWords = new List<FindableWord>();
@@ -25,25 +25,25 @@ namespace OP_LetterLabyrinth
             _letters.AddRange(reader.GetAllLetters().ToList());
         }
 
-        public void AddPathWord(Letter[] word)
+        public void AddPathWord(ILetter[] word)
         {
             var pathWord = new FindableWord(StringFromLetters(word), word.Sum(w => w.GetPoints()), false);
             _pathWords.Add(pathWord);
         }
 
-        public void AddGoodWord(Letter[] word)
+        public void AddGoodWord(ILetter[] word)
         {
             var goodWord = new FindableWord(StringFromLetters(word), word.Sum(w => w.GetPoints()), false);
             _goodWords.Add(goodWord);
         }
 
-        public void AddBadWord(Letter[] word)
+        public void AddBadWord(ILetter[] word)
         {
             var badWord = new FindableWord(StringFromLetters(word), word.Sum(w => w.GetPoints()), false);
             _badWords.Add(badWord);
         }
 
-        public void MarkPathWordFound(Letter[] word)
+        public void MarkPathWordFound(ILetter[] word)
         {
             var stringWord = StringFromLetters(word).ToUpper();
             Logger.GetInstance().Log("INFO", $"Marking path word found: {stringWord}");
@@ -54,7 +54,7 @@ namespace OP_LetterLabyrinth
             }
         }
 
-        public bool WordExistsInPath(Letter[] word)
+        public bool WordExistsInPath(ILetter[] word)
         {
             var stringWord = StringFromLetters(word).ToUpper();
             Logger.GetInstance().Log("INFO", $"Checking for word {stringWord} existance in path");
@@ -63,7 +63,7 @@ namespace OP_LetterLabyrinth
             return foundWord != null;
         }
 
-        public bool WordFragmentExistsInPath(Letter[] word)
+        public bool WordFragmentExistsInPath(ILetter[] word)
         {
             var stringWord = StringFromLetters(word).ToUpper();
             Logger.GetInstance().Log("INFO", $"Checking for word fragment {stringWord} existance in path");
@@ -72,7 +72,7 @@ namespace OP_LetterLabyrinth
             return result;
         }
 
-        public bool WordExists(Letter[] word)
+        public bool WordExists(ILetter[] word)
         {
             var stringWord = StringFromLetters(word).ToLower();
             Logger.GetInstance().Log("INFO", $"Checking word {stringWord} for existance");
@@ -81,7 +81,7 @@ namespace OP_LetterLabyrinth
             return result;
         }
 
-        public bool AnyWordBeginsWith(Letter[] fragment)
+        public bool AnyWordBeginsWith(ILetter[] fragment)
         {
             var stringFragment = StringFromLetters(fragment).ToLower();
             return _words.Any(w => w.StartsWith(stringFragment));
@@ -116,18 +116,18 @@ namespace OP_LetterLabyrinth
             return _language;
         }
 
-        public Letter[] GetLettersOfWord(string word)
+        public ILetter[] GetLettersOfWord(string word)
         {
             Logger.GetInstance().Log("INFO", $"Getting letters of word: {word}");
             return word.Select(letter => _letters.First(l => l.GetName() == letter.ToString())).ToArray();
         }
 
-        public static string StringFromLetters(Letter[] letters)
+        public static string StringFromLetters(ILetter[] letters)
         {
             return letters.Aggregate("", (s, letter) => s += letter.GetName());
         }
 
-        public Letter[] GetLetters()
+        public ILetter[] GetLetters()
         {
             return _letters.ToArray();
         }

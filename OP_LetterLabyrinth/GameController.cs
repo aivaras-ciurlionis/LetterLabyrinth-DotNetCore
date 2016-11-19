@@ -57,7 +57,7 @@ namespace OP_LetterLabyrinth
             var move = GetAndValidatedMove();
             var position = _currentPlayer.Move(move);
             WordStrategyContext context = null;
-            Letter[] currentWord;
+            ILetter[] currentWord;
             if (move == Move.Drop)
             {
                 currentWord = GameStatus.GetInstance().GetCurrentWord();

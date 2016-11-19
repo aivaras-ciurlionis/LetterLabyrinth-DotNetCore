@@ -18,7 +18,8 @@ namespace OP_LetterLabyrinth
         {
             Console.Clear();
             Console.WriteLine();
-            Console.WriteLine(grid.ToString());
+            grid.Print();
+            Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine();
             Console.WriteLine(GameStatus.GetInstance().ToString());
             Console.WriteLine();

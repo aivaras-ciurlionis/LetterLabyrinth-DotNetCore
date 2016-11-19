@@ -5,7 +5,6 @@ namespace OP_LetterLabyrinth
 
     public class SecretLetterDecorator : LetterDecorator
     {
-
         public SecretLetterDecorator(ILetter letter) : base(letter)
         {
         }
@@ -24,7 +23,5 @@ namespace OP_LetterLabyrinth
         {
             return "?";
         }
-
     }
-
 }

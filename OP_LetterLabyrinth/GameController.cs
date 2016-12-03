@@ -1,7 +1,9 @@
-/**
- * @(#) GameController.cs
- */
 
+
+using System.Linq;
+/**
+* @(#) GameController.cs
+*/
 namespace OP_LetterLabyrinth
 {
     public class GameController
@@ -13,6 +15,18 @@ namespace OP_LetterLabyrinth
         private Dictionary _currentDictionary;
         private int _sizeX;
         private int _sizeY;
+        private HighScoreProvider _highScore;
+
+        private void InitiateHighScore()
+        {
+            HighScoreProvider highestScore = new HighestScore(HighScoreType.HIGHEST_SCORE);
+            HighScoreProvider lowestScore = new LowestScore(HighScoreType.LOWEST_SCORE);
+            HighScoreProvider longestWord = new LongestWord(HighScoreType.LONGEST_WORD);
+
+            lowestScore.SetNextProvider(longestWord);
+            highestScore.SetNextProvider(lowestScore);
+            _highScore = highestScore;
+        }
 
         public void InstanciateGame(LanguageName language,
             IInput input, IGraphics graphics, int sizeX, int sizeY, PathProviderName pathProviderName)
@@ -20,6 +34,7 @@ namespace OP_LetterLabyrinth
             Logger.GetInstance().Log("INFO", $"Starting game. Grid: {sizeX}:{sizeY}. Language : {language}");
             var lang = new Language(language, language + "_dictionary.txt");
             ResetGameStatus(lang);
+            InitiateHighScore();
             _currentDictionary = new Dictionary(lang);
             _currentPlayer = new Player(new Point { X = -1, Y = 0 });
             _sizeX = sizeX;
@@ -87,8 +102,16 @@ namespace OP_LetterLabyrinth
 
         public void FinishGame()
         {
+            var points = GameStatus.GetInstance().GetPoints();
+
+            var bestWord = _currentDictionary.GetAllGoodWords().Aggregate(string.Empty, (a, b) => b.Length > a.Length ? b : a);
+
+            _highScore.SetHighScore(HighScoreType.HIGHEST_SCORE, points.ToString());
+            _highScore.SetHighScore(HighScoreType.LOWEST_SCORE, points.ToString());
+            _highScore.SetHighScore(HighScoreType.LONGEST_WORD, bestWord);
+
             Logger.GetInstance().Log("INFO", "Ending game");
-            _graphics.DrawVictory(_currentDictionary);
+            _graphics.DrawVictory(_currentDictionary, _highScore);
         }
 
         public bool HasGameFinished()

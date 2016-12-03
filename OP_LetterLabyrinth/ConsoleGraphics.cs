@@ -9,9 +9,9 @@ namespace OP_LetterLabyrinth
 {
     public class ConsoleGraphics : IGraphics
     {
-        public ConsoleGraphics ()
+        public ConsoleGraphics()
         {
-          Console.OutputEncoding = Encoding.UTF8;
+            Console.OutputEncoding = Encoding.UTF8;
         }
 
         public void DrawTurn(Player player, LetterGrid grid, Dictionary dictionary)
@@ -60,7 +60,7 @@ namespace OP_LetterLabyrinth
 
         }
 
-        public void DrawVictory(Dictionary dictionary)
+        public void DrawVictory(Dictionary dictionary, HighScoreProvider highScores)
         {
             Console.Clear();
             Console.WriteLine();
@@ -78,7 +78,15 @@ namespace OP_LetterLabyrinth
                 Console.ForegroundColor = ConsoleColor.White;
             }
             Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("-----HIGH SCORES-----");
+            Console.WriteLine(highScores.GetHighScore(HighScoreType.HIGHEST_SCORE));
+            Console.WriteLine(highScores.GetHighScore(HighScoreType.LOWEST_SCORE));
+            Console.WriteLine(highScores.GetHighScore(HighScoreType.LONGEST_WORD));
+            Console.WriteLine();
         }
+
+
 
     }
 }

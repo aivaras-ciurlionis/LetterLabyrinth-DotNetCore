@@ -239,3 +239,7 @@ _Pvt_Extensions
 .fake/
 
 .idea
+HighestScoreRecord.txt
+logger.txt
+LowestScoreRecord.txt
+LongestWordRecord.txt

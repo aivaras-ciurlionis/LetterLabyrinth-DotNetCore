@@ -1,9 +1,7 @@
-using System;
 using System.Collections.Generic;
 
 namespace OP_LetterLabyrinth
 {
-
     public class DictionaryPathProvider : IPathProvider
     {
         private List<int> SplitIntoFixedSizes(int count, int minSize, int maxSize)
@@ -38,5 +36,4 @@ namespace OP_LetterLabyrinth
             return words;
         }
     }
-
 }

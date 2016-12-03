@@ -109,10 +109,8 @@ namespace OP_LetterLabyrinth
             var possibleWords = _words.Where(w => w.Length == length);
             var enumerable = possibleWords as string[] ?? possibleWords.ToArray();
             var word = enumerable.ElementAt(random.Next(enumerable.Length)).ToUpper();
-            var nw = word.Substring(0,word.Length-1);
-            nw += "'";
-            Logger.GetInstance().Log("INFO", $"Getting word of {length} length: {nw}");
-            return nw;
+            Logger.GetInstance().Log("INFO", $"Getting word of {length} length: {word}");
+            return word;
         }
 
         public Language GetLanguage()

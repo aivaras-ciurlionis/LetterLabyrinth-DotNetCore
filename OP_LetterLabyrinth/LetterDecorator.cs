@@ -35,6 +35,11 @@ namespace OP_LetterLabyrinth {
         {
             return DecoratedLetter.GetRenderName();
         }
+
+        public bool isNill()
+        {
+            return false;
+        }
     }
 
 

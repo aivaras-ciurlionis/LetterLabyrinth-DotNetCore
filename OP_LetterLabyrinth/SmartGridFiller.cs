@@ -77,6 +77,8 @@ namespace OP_LetterLabyrinth
                           .GetPathWordsProvider(pathProvider)
                           .GetPathWords(path.Count, Dictionary);
 
+           
+
             var letterWords = new List<ILetter[]>();
             var pointNumber = 0;
             foreach (var word in words)

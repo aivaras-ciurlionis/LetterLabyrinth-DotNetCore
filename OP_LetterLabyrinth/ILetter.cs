@@ -9,5 +9,6 @@ namespace OP_LetterLabyrinth
         string GetName();
         ConsoleColor GetRenderColor();
         string GetRenderName();
+        bool isNill();
     }
 }

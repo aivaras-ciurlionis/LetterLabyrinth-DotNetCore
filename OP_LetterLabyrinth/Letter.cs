@@ -46,6 +46,11 @@ namespace OP_LetterLabyrinth
         {
             return _letterName;
         }
+
+        public bool isNill()
+        {
+            return false;
+        }
     }
 }
 

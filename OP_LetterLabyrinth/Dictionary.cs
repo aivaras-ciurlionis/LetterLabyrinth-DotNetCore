@@ -7,6 +7,7 @@ namespace OP_LetterLabyrinth
     public class Dictionary
     {
         private readonly Language _language;
+        private readonly WordLetterProvider _letterProvider;
         private readonly string[] _words;
         private List<ILetter> _letters = new List<ILetter>();
         private Random random = new Random();
@@ -23,6 +24,7 @@ namespace OP_LetterLabyrinth
             reader.ReadFile(_language.GetDictionaryLocation());
             _words = reader.GetAllWords();
             _letters.AddRange(reader.GetAllLetters().ToList());
+            _letterProvider = new WordLetterProvider(_letters);
         }
 
         public void AddPathWord(ILetter[] word)
@@ -107,8 +109,10 @@ namespace OP_LetterLabyrinth
             var possibleWords = _words.Where(w => w.Length == length);
             var enumerable = possibleWords as string[] ?? possibleWords.ToArray();
             var word = enumerable.ElementAt(random.Next(enumerable.Length)).ToUpper();
-            Logger.GetInstance().Log("INFO", $"Getting word of {length} length: {word}");
-            return word;
+            var nw = word.Substring(0,word.Length-1);
+            nw += "'";
+            Logger.GetInstance().Log("INFO", $"Getting word of {length} length: {nw}");
+            return nw;
         }
 
         public Language GetLanguage()
@@ -118,8 +122,7 @@ namespace OP_LetterLabyrinth
 
         public ILetter[] GetLettersOfWord(string word)
         {
-            Logger.GetInstance().Log("INFO", $"Getting letters of word: {word}");
-            return word.Select(letter => _letters.First(l => l.GetName() == letter.ToString())).ToArray();
+            return _letterProvider.GetWordLetters(word);      
         }
 
         public static string StringFromLetters(ILetter[] letters)

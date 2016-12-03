@@ -47,18 +47,10 @@ namespace OP_LetterLabyrinth
             Logger.GetInstance().Log("INFO", "Program is starting");
             var languageName = GetLanguageFromArguments(args);
             var pathProviderName = GetPathProviderFromArguments(args);
-            Logger.GetInstance().Log("INFO", $"Setting language: {languageName}");
-            var game = new GameController();
-            game.InstanciateGame(languageName, new SimpleInput(), new ConsoleGraphics(), 15, 15, pathProviderName);
-            var turn = 0;
-            while (!game.HasGameFinished())
-            {
-                turn++;
-                game.PerformNextTurn(turn);
-            }
-            game.FinishGame();
-            Logger.GetInstance().Log("INFO", "Game finished.");
+            AbstractLabyrinthGame game = new GameController();
+            game.Play(languageName, pathProviderName);
             Console.ReadKey();
+            Console.Clear();
         }
     }
 }

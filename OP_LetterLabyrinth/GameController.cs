@@ -6,7 +6,7 @@ using System.Linq;
 */
 namespace OP_LetterLabyrinth
 {
-    public class GameController
+    public class GameController : AbstractLabyrinthGame
     {
         private LetterGrid _currentGrid;
         private Player _currentPlayer;
@@ -28,7 +28,7 @@ namespace OP_LetterLabyrinth
             _highScore = highestScore;
         }
 
-        public void InstanciateGame(LanguageName language,
+        protected override void InstanciateGame(LanguageName language,
             IInput input, IGraphics graphics, int sizeX, int sizeY, PathProviderName pathProviderName)
         {
             Logger.GetInstance().Log("INFO", $"Starting game. Grid: {sizeX}:{sizeY}. Language : {language}");
@@ -66,7 +66,7 @@ namespace OP_LetterLabyrinth
             return move;
         }
 
-        public void PerformNextTurn(int turnNumber)
+        protected override void PerformNextTurn(int turnNumber)
         {
             Logger.GetInstance().Log("INFO", $"Performing turn {turnNumber}");
             var move = GetAndValidatedMove();
@@ -100,7 +100,7 @@ namespace OP_LetterLabyrinth
             _graphics.DrawTurn(_currentPlayer, _currentGrid, _currentDictionary);
         }
 
-        public void FinishGame()
+        protected override void FinishGame()
         {
             var points = GameStatus.GetInstance().GetPoints();
 
@@ -109,12 +109,13 @@ namespace OP_LetterLabyrinth
             _highScore.SetHighScore(HighScoreType.HIGHEST_SCORE, points.ToString());
             _highScore.SetHighScore(HighScoreType.LOWEST_SCORE, points.ToString());
             _highScore.SetHighScore(HighScoreType.LONGEST_WORD, bestWord);
+            GameStatus.GetInstance().ClearCurrentWord();
 
             Logger.GetInstance().Log("INFO", "Ending game");
             _graphics.DrawVictory(_currentDictionary, _highScore);
         }
 
-        public bool HasGameFinished()
+        protected override bool HasGameFinished()
         {
             var playerPosition = _currentPlayer.GetPosition();
             return playerPosition.X >= _sizeX - 1 || playerPosition.Y >= _sizeY - 1;

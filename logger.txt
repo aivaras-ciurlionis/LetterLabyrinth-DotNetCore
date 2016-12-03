@@ -1,248 +1,285 @@
-2016-12-03T17:29:13 INFO     Program is starting
-2016-12-03T17:29:13 INFO     Setting language: EN
-2016-12-03T17:29:13 INFO     Starting game. Grid: 15:15. Language : EN
-2016-12-03T17:29:13 INFO     Reseting game
-2016-12-03T17:29:13 INFO     Requesting factory: DictionaryReaderFactory
-2016-12-03T17:29:13 INFO     Getting dictionary reader: ENDictionaryReader
-2016-12-03T17:29:13 INFO     Reading EN dictionary
-2016-12-03T17:29:13 INFO     Reading dictionary in EN_dictionary.txt
-2016-12-03T17:29:13 INFO     Reading words
-2016-12-03T17:29:13 INFO     354986 word(s) read
-2016-12-03T17:29:13 INFO     Reading letters
-2016-12-03T17:29:13 INFO     26 letter(s) read
-2016-12-03T17:29:13 INFO     Filling grid
-2016-12-03T17:29:13 INFO     Computing path...
-2016-12-03T17:29:13 INFO     Adding point to path: 0:0
-2016-12-03T17:29:13 INFO     Adding point to path: 1:0
-2016-12-03T17:29:13 INFO     Wrong point, going back: 0:0
-2016-12-03T17:29:13 INFO     Wrong point, going back: 1:-1
-2016-12-03T17:29:13 INFO     Adding point to path: 1:1
-2016-12-03T17:29:13 INFO     Wrong point, going back: 1:0
-2016-12-03T17:29:13 INFO     Adding point to path: 2:1
-2016-12-03T17:29:13 INFO     Wrong point, going back: 1:1
-2016-12-03T17:29:13 INFO     Adding point to path: 2:2
-2016-12-03T17:29:13 INFO     Adding point to path: 2:3
-2016-12-03T17:29:13 INFO     Wrong point, going back: 2:2
-2016-12-03T17:29:13 INFO     Adding point to path: 3:3
-2016-12-03T17:29:13 INFO     Adding point to path: 4:3
-2016-12-03T17:29:13 INFO     Adding point to path: 5:3
-2016-12-03T17:29:13 INFO     Adding point to path: 6:3
-2016-12-03T17:29:13 INFO     Adding point to path: 7:3
-2016-12-03T17:29:13 INFO     Wrong point, going back: 6:3
-2016-12-03T17:29:13 INFO     Adding point to path: 8:3
-2016-12-03T17:29:13 INFO     Wrong point, going back: 7:3
-2016-12-03T17:29:13 INFO     Adding point to path: 9:3
-2016-12-03T17:29:13 INFO     Adding point to path: 9:2
-2016-12-03T17:29:13 INFO     Adding point to path: 9:1
-2016-12-03T17:29:13 INFO     Adding point to path: 8:1
-2016-12-03T17:29:13 INFO     Wrong point, going back: 9:1
-2016-12-03T17:29:13 INFO     Adding point to path: 8:2
-2016-12-03T17:29:13 INFO     Wrong point, going back: 8:3
-2016-12-03T17:29:13 INFO     Adding point to path: 7:2
-2016-12-03T17:29:13 INFO     Adding point to path: 7:1
-2016-12-03T17:29:13 INFO     Wrong point, going back: 8:1
-2016-12-03T17:29:13 INFO     Adding point to path: 7:0
-2016-12-03T17:29:13 INFO     Adding point to path: 8:0
-2016-12-03T17:29:13 INFO     Wrong point, going back: 8:1
-2016-12-03T17:29:13 INFO     Wrong point, going back: 8:-1
-2016-12-03T17:29:13 INFO     Wrong point, going back: 7:0
-2016-12-03T17:29:13 INFO     Adding point to path: 9:0
-2016-12-03T17:29:13 INFO     Wrong point, going back: 8:0
-2016-12-03T17:29:13 INFO     Wrong point, going back: 9:-1
-2016-12-03T17:29:13 INFO     Adding point to path: 10:0
-2016-12-03T17:29:13 INFO     Adding point to path: 11:0
-2016-12-03T17:29:13 INFO     Wrong point, going back: 10:0
-2016-12-03T17:29:13 INFO     Wrong point, going back: 11:-1
-2016-12-03T17:29:13 INFO     Adding point to path: 12:0
-2016-12-03T17:29:13 INFO     Wrong point, going back: 11:0
-2016-12-03T17:29:13 INFO     Adding point to path: 12:1
-2016-12-03T17:29:13 INFO     Adding point to path: 13:1
-2016-12-03T17:29:14 INFO     Found labyrinth end: 14:1
-2016-12-03T17:29:14 INFO     Path length: 28
-2016-12-03T17:29:14 INFO     Requesting factory: PathProviderFactory
-2016-12-03T17:29:14 INFO     Getting path words provider: DictionaryPathProvider
-2016-12-03T17:29:14 INFO     Getting word of 8 length: EUCTICAL
-2016-12-03T17:29:14 INFO     Getting word of 8 length: SUNBURNS
-2016-12-03T17:29:14 INFO     Getting word of 8 length: GENISARO
-2016-12-03T17:29:14 INFO     Getting word of 4 length: WATH
-2016-12-03T17:29:14 INFO     Getting letters of word: EUCTICAL
-2016-12-03T17:29:14 INFO     Getting letters of word: SUNBURNS
-2016-12-03T17:29:14 INFO     Getting letters of word: GENISARO
-2016-12-03T17:29:14 INFO     Getting letters of word: WATH
-2016-12-03T17:29:14 INFO     Performing turn 1
-2016-12-03T17:29:17 INFO     Goging: Down
-2016-12-03T17:29:17 INFO     Consuming letter E at 0:0
-2016-12-03T17:29:17 INFO     Checking word e for existance
-2016-12-03T17:29:17 INFO     Result:True
-2016-12-03T17:29:17 INFO     Performing turn 2
-2016-12-03T17:29:17 INFO     Goging: Down
-2016-12-03T17:29:17 INFO     Consuming letter U at 1:0
-2016-12-03T17:29:17 INFO     Checking word eu for existance
-2016-12-03T17:29:17 INFO     Result:True
-2016-12-03T17:29:17 INFO     Performing turn 3
-2016-12-03T17:29:18 INFO     Goging: Right
-2016-12-03T17:29:18 INFO     Consuming letter C at 1:1
-2016-12-03T17:29:18 INFO     Checking word euc for existance
-2016-12-03T17:29:18 INFO     Result:False
-2016-12-03T17:29:18 INFO     Performing turn 4
-2016-12-03T17:29:18 INFO     Goging: Down
-2016-12-03T17:29:18 INFO     Consuming letter T at 2:1
-2016-12-03T17:29:18 INFO     Checking word euct for existance
-2016-12-03T17:29:18 INFO     Result:False
-2016-12-03T17:29:18 INFO     Performing turn 5
-2016-12-03T17:29:18 INFO     Goging: Right
-2016-12-03T17:29:18 INFO     Consuming letter I at 2:2
-2016-12-03T17:29:18 INFO     Checking word eucti for existance
-2016-12-03T17:29:18 INFO     Result:True
-2016-12-03T17:29:18 INFO     Found good word. EUCTI
-2016-12-03T17:29:18 INFO     Checking for word EUCTI existance in path
-2016-12-03T17:29:18 INFO     Result: 
-2016-12-03T17:29:18 INFO     Performing turn 6
-2016-12-03T17:29:19 INFO     Goging: Right
-2016-12-03T17:29:19 INFO     Consuming letter C at 2:3
-2016-12-03T17:29:19 INFO     Checking word euctic for existance
-2016-12-03T17:29:19 INFO     Result:False
-2016-12-03T17:29:19 INFO     Performing turn 7
-2016-12-03T17:29:19 INFO     Goging: Down
-2016-12-03T17:29:19 INFO     Consuming letter A at 3:3
-2016-12-03T17:29:19 INFO     Checking word euctica for existance
-2016-12-03T17:29:19 INFO     Result:False
-2016-12-03T17:29:19 INFO     Performing turn 8
-2016-12-03T17:29:20 INFO     Goging: Down
-2016-12-03T17:29:20 INFO     Consuming letter L at 4:3
-2016-12-03T17:29:20 INFO     Checking word euctical for existance
-2016-12-03T17:29:20 INFO     Result:True
-2016-12-03T17:29:20 INFO     Found good word. EUCTICAL
-2016-12-03T17:29:20 INFO     Checking for word EUCTICAL existance in path
-2016-12-03T17:29:20 INFO     Result: EUCTICAL (21)
-2016-12-03T17:29:20 INFO     Found word in path: EUCTICAL
-2016-12-03T17:29:20 INFO     Marking path word found: EUCTICAL
-2016-12-03T17:29:20 INFO     Performing turn 9
-2016-12-03T17:29:23 INFO     Goging: Down
-2016-12-03T17:29:23 INFO     Consuming letter S at 5:3
-2016-12-03T17:29:23 INFO     Checking word s for existance
-2016-12-03T17:29:23 INFO     Result:True
-2016-12-03T17:29:23 INFO     Performing turn 10
-2016-12-03T17:29:23 INFO     Goging: Down
-2016-12-03T17:29:23 INFO     Consuming letter U at 6:3
-2016-12-03T17:29:23 INFO     Checking word su for existance
-2016-12-03T17:29:23 INFO     Result:True
-2016-12-03T17:29:24 INFO     Performing turn 11
-2016-12-03T17:29:24 INFO     Goging: Down
-2016-12-03T17:29:24 INFO     Consuming letter N at 7:3
-2016-12-03T17:29:24 INFO     Checking word sun for existance
-2016-12-03T17:29:24 INFO     Result:True
-2016-12-03T17:29:24 INFO     Found good word. SUN
-2016-12-03T17:29:24 INFO     Checking for word SUN existance in path
-2016-12-03T17:29:24 INFO     Result: 
-2016-12-03T17:29:24 INFO     Performing turn 12
-2016-12-03T17:29:24 INFO     Goging: Down
-2016-12-03T17:29:24 INFO     Consuming letter B at 8:3
-2016-12-03T17:29:24 INFO     Checking word sunb for existance
-2016-12-03T17:29:24 INFO     Result:False
-2016-12-03T17:29:24 INFO     Performing turn 13
-2016-12-03T17:29:24 INFO     Goging: Down
-2016-12-03T17:29:24 INFO     Consuming letter U at 9:3
-2016-12-03T17:29:24 INFO     Checking word sunbu for existance
-2016-12-03T17:29:24 INFO     Result:False
-2016-12-03T17:29:24 INFO     Performing turn 14
-2016-12-03T17:29:25 INFO     Goging: Left
-2016-12-03T17:29:25 INFO     Consuming letter R at 9:2
-2016-12-03T17:29:25 INFO     Checking word sunbur for existance
-2016-12-03T17:29:25 INFO     Result:False
-2016-12-03T17:29:25 INFO     Performing turn 15
-2016-12-03T17:29:27 INFO     Goging: Left
-2016-12-03T17:29:27 INFO     Consuming letter N at 9:1
-2016-12-03T17:29:27 INFO     Checking word sunburn for existance
-2016-12-03T17:29:27 INFO     Result:True
-2016-12-03T17:29:27 INFO     Found good word. SUNBURN
-2016-12-03T17:29:27 INFO     Checking for word SUNBURN existance in path
-2016-12-03T17:29:27 INFO     Result: 
-2016-12-03T17:29:27 INFO     Performing turn 16
-2016-12-03T17:29:27 INFO     Goging: Up
-2016-12-03T17:29:27 INFO     Consuming letter S at 8:1
-2016-12-03T17:29:27 INFO     Checking word sunburns for existance
-2016-12-03T17:29:27 INFO     Result:True
-2016-12-03T17:29:27 INFO     Found good word. SUNBURNS
-2016-12-03T17:29:27 INFO     Checking for word SUNBURNS existance in path
-2016-12-03T17:29:27 INFO     Result: SUNBURNS (26)
-2016-12-03T17:29:27 INFO     Found word in path: SUNBURNS
-2016-12-03T17:29:27 INFO     Marking path word found: SUNBURNS
-2016-12-03T17:29:27 INFO     Performing turn 17
-2016-12-03T17:29:28 INFO     Goging: Right
-2016-12-03T17:29:28 INFO     Consuming letter G at 8:2
-2016-12-03T17:29:28 INFO     Checking word g for existance
-2016-12-03T17:29:28 INFO     Result:True
-2016-12-03T17:29:28 INFO     Performing turn 18
-2016-12-03T17:29:29 INFO     Goging: Up
-2016-12-03T17:29:29 INFO     Consuming letter E at 7:2
-2016-12-03T17:29:29 INFO     Checking word ge for existance
-2016-12-03T17:29:29 INFO     Result:True
-2016-12-03T17:29:29 INFO     Performing turn 19
-2016-12-03T17:29:29 INFO     Goging: Left
-2016-12-03T17:29:29 INFO     Consuming letter N at 7:1
-2016-12-03T17:29:29 INFO     Checking word gen for existance
-2016-12-03T17:29:29 INFO     Result:True
-2016-12-03T17:29:29 INFO     Found good word. GEN
-2016-12-03T17:29:29 INFO     Checking for word GEN existance in path
-2016-12-03T17:29:29 INFO     Result: 
-2016-12-03T17:29:29 INFO     Performing turn 20
-2016-12-03T17:29:29 INFO     Goging: Left
-2016-12-03T17:29:29 INFO     Consuming letter I at 7:0
-2016-12-03T17:29:29 INFO     Checking word geni for existance
-2016-12-03T17:29:29 INFO     Result:False
-2016-12-03T17:29:29 INFO     Performing turn 21
-2016-12-03T17:29:30 INFO     Goging: Down
-2016-12-03T17:29:30 INFO     Consuming letter S at 8:0
-2016-12-03T17:29:30 INFO     Checking word genis for existance
-2016-12-03T17:29:30 INFO     Result:False
-2016-12-03T17:29:31 INFO     Performing turn 22
-2016-12-03T17:29:31 INFO     Goging: Down
-2016-12-03T17:29:31 INFO     Consuming letter A at 9:0
-2016-12-03T17:29:31 INFO     Checking word genisa for existance
-2016-12-03T17:29:31 INFO     Result:False
-2016-12-03T17:29:31 INFO     Performing turn 23
-2016-12-03T17:29:31 INFO     Goging: Down
-2016-12-03T17:29:31 INFO     Consuming letter R at 10:0
-2016-12-03T17:29:31 INFO     Checking word genisar for existance
-2016-12-03T17:29:31 INFO     Result:False
-2016-12-03T17:29:31 INFO     Performing turn 24
-2016-12-03T17:29:31 INFO     Goging: Down
-2016-12-03T17:29:31 INFO     Consuming letter O at 11:0
-2016-12-03T17:29:31 INFO     Checking word genisaro for existance
-2016-12-03T17:29:31 INFO     Result:True
-2016-12-03T17:29:31 INFO     Found good word. GENISARO
-2016-12-03T17:29:31 INFO     Checking for word GENISARO existance in path
-2016-12-03T17:29:31 INFO     Result: GENISARO (18)
-2016-12-03T17:29:31 INFO     Found word in path: GENISARO
-2016-12-03T17:29:31 INFO     Marking path word found: GENISARO
-2016-12-03T17:29:31 INFO     Performing turn 25
-2016-12-03T17:29:32 INFO     Goging: Down
-2016-12-03T17:29:32 INFO     Consuming letter W at 12:0
-2016-12-03T17:29:32 INFO     Checking word w for existance
-2016-12-03T17:29:32 INFO     Result:True
-2016-12-03T17:29:33 INFO     Performing turn 26
-2016-12-03T17:29:33 INFO     Goging: Right
-2016-12-03T17:29:33 INFO     Consuming letter A at 12:1
-2016-12-03T17:29:33 INFO     Checking word wa for existance
-2016-12-03T17:29:33 INFO     Result:True
-2016-12-03T17:29:33 INFO     Performing turn 27
-2016-12-03T17:29:33 INFO     Goging: Down
-2016-12-03T17:29:33 INFO     Consuming letter T at 13:1
-2016-12-03T17:29:33 INFO     Checking word wat for existance
-2016-12-03T17:29:33 INFO     Result:True
-2016-12-03T17:29:33 INFO     Found good word. WAT
-2016-12-03T17:29:33 INFO     Checking for word WAT existance in path
-2016-12-03T17:29:33 INFO     Result: 
-2016-12-03T17:29:33 INFO     Performing turn 28
-2016-12-03T17:29:33 INFO     Goging: Down
-2016-12-03T17:29:33 INFO     Consuming letter H at 14:1
-2016-12-03T17:29:33 INFO     Checking word wath for existance
-2016-12-03T17:29:33 INFO     Result:True
-2016-12-03T17:29:33 INFO     Found good word. WATH
-2016-12-03T17:29:33 INFO     Checking for word WATH existance in path
-2016-12-03T17:29:33 INFO     Result: WATH (10)
-2016-12-03T17:29:33 INFO     Found word in path: WATH
-2016-12-03T17:29:33 INFO     Marking path word found: WATH
-2016-12-03T17:29:34 INFO     Ending game
-2016-12-03T17:29:34 INFO     Game finished.
+2016-12-03T18:00:07 INFO     Program is starting
+2016-12-03T18:00:07 INFO     Setting language: EN
+2016-12-03T18:00:07 INFO     Starting game. Grid: 15:15. Language : EN
+2016-12-03T18:00:07 INFO     Reseting game
+2016-12-03T18:00:07 INFO     Requesting factory: DictionaryReaderFactory
+2016-12-03T18:00:07 INFO     Getting dictionary reader: ENDictionaryReader
+2016-12-03T18:00:07 INFO     Reading EN dictionary
+2016-12-03T18:00:07 INFO     Reading dictionary in EN_dictionary.txt
+2016-12-03T18:00:07 INFO     Reading words
+2016-12-03T18:00:07 INFO     354986 word(s) read
+2016-12-03T18:00:07 INFO     Reading letters
+2016-12-03T18:00:07 INFO     26 letter(s) read
+2016-12-03T18:00:07 INFO     Filling grid
+2016-12-03T18:00:07 INFO     Computing path...
+2016-12-03T18:00:07 INFO     Adding point to path: 0:0
+2016-12-03T18:00:07 INFO     Wrong point, going back: 0:-1
+2016-12-03T18:00:07 INFO     Wrong point, going back: -1:0
+2016-12-03T18:00:07 INFO     Adding point to path: 0:1
+2016-12-03T18:00:07 INFO     Wrong point, going back: -1:1
+2016-12-03T18:00:07 INFO     Adding point to path: 1:1
+2016-12-03T18:00:07 INFO     Adding point to path: 2:1
+2016-12-03T18:00:07 INFO     Adding point to path: 2:2
+2016-12-03T18:00:07 INFO     Adding point to path: 2:3
+2016-12-03T18:00:07 INFO     Adding point to path: 3:3
+2016-12-03T18:00:07 INFO     Adding point to path: 3:4
+2016-12-03T18:00:07 INFO     Wrong point, going back: 3:3
+2016-12-03T18:00:07 INFO     Adding point to path: 4:4
+2016-12-03T18:00:07 INFO     Adding point to path: 5:4
+2016-12-03T18:00:07 INFO     Wrong point, going back: 4:4
+2016-12-03T18:00:08 INFO     Adding point to path: 6:4
+2016-12-03T18:00:08 INFO     Adding point to path: 6:3
+2016-12-03T18:00:08 INFO     Wrong point, going back: 6:4
+2016-12-03T18:00:08 INFO     Adding point to path: 5:3
+2016-12-03T18:00:08 INFO     Adding point to path: 5:2
+2016-12-03T18:00:08 INFO     Adding point to path: 6:2
+2016-12-03T18:00:08 INFO     Adding point to path: 7:2
+2016-12-03T18:00:08 INFO     Adding point to path: 7:3
+2016-12-03T18:00:08 INFO     Adding point to path: 7:4
+2016-12-03T18:00:08 INFO     Wrong point, going back: 7:3
+2016-12-03T18:00:08 INFO     Adding point to path: 7:5
+2016-12-03T18:00:08 INFO     Adding point to path: 6:5
+2016-12-03T18:00:08 INFO     Adding point to path: 5:5
+2016-12-03T18:00:08 INFO     Wrong point, going back: 5:4
+2016-12-03T18:00:08 INFO     Adding point to path: 4:5
+2016-12-03T18:00:08 INFO     Wrong point, going back: 5:5
+2016-12-03T18:00:08 INFO     Adding point to path: 3:5
+2016-12-03T18:00:08 INFO     Wrong point, going back: 4:5
+2016-12-03T18:00:08 INFO     Wrong point, going back: 3:4
+2016-12-03T18:00:08 INFO     Adding point to path: 2:5
+2016-12-03T18:00:08 INFO     Adding point to path: 2:6
+2016-12-03T18:00:08 INFO     Adding point to path: 2:7
+2016-12-03T18:00:08 INFO     Wrong point, going back: 2:6
+2016-12-03T18:00:08 INFO     Adding point to path: 1:7
+2016-12-03T18:00:08 INFO     Adding point to path: 1:8
+2016-12-03T18:00:08 INFO     Wrong point, going back: 1:7
+2016-12-03T18:00:08 INFO     Adding point to path: 0:8
+2016-12-03T18:00:08 INFO     Wrong point, going back: -1:8
+2016-12-03T18:00:08 INFO     Wrong point, going back: 1:8
+2016-12-03T18:00:08 INFO     Adding point to path: 0:9
+2016-12-03T18:00:08 INFO     Adding point to path: 0:10
+2016-12-03T18:00:08 INFO     Adding point to path: 1:10
+2016-12-03T18:00:08 INFO     Adding point to path: 1:9
+2016-12-03T18:00:08 INFO     Wrong point, going back: 1:10
+2016-12-03T18:00:08 INFO     Wrong point, going back: 0:9
+2016-12-03T18:00:08 INFO     Wrong point, going back: 1:8
+2016-12-03T18:00:08 INFO     Adding point to path: 2:9
+2016-12-03T18:00:08 INFO     Wrong point, going back: 1:9
+2016-12-03T18:00:08 INFO     Adding point to path: 2:8
+2016-12-03T18:00:08 INFO     Wrong point, going back: 1:8
+2016-12-03T18:00:08 INFO     Adding point to path: 3:8
+2016-12-03T18:00:08 INFO     Wrong point, going back: 2:8
+2016-12-03T18:00:08 INFO     Adding point to path: 4:8
+2016-12-03T18:00:08 INFO     Adding point to path: 4:7
+2016-12-03T18:00:08 INFO     Adding point to path: 5:7
+2016-12-03T18:00:08 INFO     Wrong point, going back: 4:7
+2016-12-03T18:00:08 INFO     Adding point to path: 5:6
+2016-12-03T18:00:08 INFO     Wrong point, going back: 5:7
+2016-12-03T18:00:08 INFO     Adding point to path: 6:6
+2016-12-03T18:00:08 INFO     Wrong point, going back: 5:6
+2016-12-03T18:00:08 INFO     Wrong point, going back: 6:5
+2016-12-03T18:00:08 INFO     Adding point to path: 7:6
+2016-12-03T18:00:08 INFO     Wrong point, going back: 6:6
+2016-12-03T18:00:08 INFO     Wrong point, going back: 7:5
+2016-12-03T18:00:08 INFO     Adding point to path: 8:6
+2016-12-03T18:00:08 INFO     Wrong point, going back: 7:6
+2016-12-03T18:00:08 INFO     Adding point to path: 9:6
+2016-12-03T18:00:08 INFO     Wrong point, going back: 8:6
+2016-12-03T18:00:08 INFO     Adding point to path: 9:5
+2016-12-03T18:00:08 INFO     Adding point to path: 8:5
+2016-12-03T18:00:08 INFO     Wrong point, going back: 8:6
+2016-12-03T18:00:08 INFO     Adding point to path: 8:4
+2016-12-03T18:00:08 INFO     Wrong point, going back: 8:5
+2016-12-03T18:00:08 INFO     Adding point to path: 9:4
+2016-12-03T18:00:08 INFO     Adding point to path: 9:3
+2016-12-03T18:00:08 INFO     Adding point to path: 9:2
+2016-12-03T18:00:08 INFO     Adding point to path: 10:2
+2016-12-03T18:00:08 INFO     Adding point to path: 10:1
+2016-12-03T18:00:08 INFO     Adding point to path: 9:1
+2016-12-03T18:00:08 INFO     Wrong point, going back: 9:2
+2016-12-03T18:00:08 INFO     Adding point to path: 9:0
+2016-12-03T18:00:08 INFO     Wrong point, going back: 9:-1
+2016-12-03T18:00:08 INFO     Adding point to path: 10:0
+2016-12-03T18:00:08 INFO     Wrong point, going back: 10:-1
+2016-12-03T18:00:08 INFO     Wrong point, going back: 9:0
+2016-12-03T18:00:08 INFO     Adding point to path: 11:0
+2016-12-03T18:00:08 INFO     Adding point to path: 11:1
+2016-12-03T18:00:08 INFO     Wrong point, going back: 11:0
+2016-12-03T18:00:08 INFO     Wrong point, going back: 10:1
+2016-12-03T18:00:08 INFO     Adding point to path: 12:1
+2016-12-03T18:00:08 INFO     Adding point to path: 13:1
+2016-12-03T18:00:08 INFO     Wrong point, going back: 12:1
+2016-12-03T18:00:08 INFO     Adding point to path: 13:0
+2016-12-03T18:00:08 INFO     Wrong point, going back: 13:-1
+2016-12-03T18:00:08 INFO     Found labyrinth end: 14:0
+2016-12-03T18:00:08 INFO     Path length: 61
+2016-12-03T18:00:08 INFO     Requesting factory: PathProviderFactory
+2016-12-03T18:00:08 INFO     Getting path words provider: DictionaryPathProvider
+2016-12-03T18:00:08 INFO     Getting word of 8 length: RHESUSES
+2016-12-03T18:00:08 INFO     Getting word of 8 length: UNIQUELY
+2016-12-03T18:00:08 INFO     Getting word of 8 length: LEAKANCE
+2016-12-03T18:00:08 INFO     Getting word of 8 length: PREVENED
+2016-12-03T18:00:08 INFO     Getting word of 8 length: JOGGLETY
+2016-12-03T18:00:08 INFO     Getting word of 8 length: SCUGGERY
+2016-12-03T18:00:08 INFO     Getting word of 8 length: ACESCENT
+2016-12-03T18:00:08 INFO     Getting word of 5 length: BUSHY
+2016-12-03T18:00:08 INFO     Getting letters of word: RHESUSES
+2016-12-03T18:00:08 INFO     Getting letters of word: UNIQUELY
+2016-12-03T18:00:08 INFO     Getting letters of word: LEAKANCE
+2016-12-03T18:00:08 INFO     Getting letters of word: PREVENED
+2016-12-03T18:00:08 INFO     Getting letters of word: JOGGLETY
+2016-12-03T18:00:08 INFO     Getting letters of word: SCUGGERY
+2016-12-03T18:00:08 INFO     Getting letters of word: ACESCENT
+2016-12-03T18:00:08 INFO     Getting letters of word: BUSHY
+2016-12-03T18:00:08 INFO     Performing turn 1
+2016-12-03T18:00:11 INFO     Goging: Down
+2016-12-03T18:00:11 INFO     Consuming letter R at 0:0
+2016-12-03T18:00:11 INFO     Checking word r for existance
+2016-12-03T18:00:11 INFO     Result:True
+2016-12-03T18:00:11 INFO     Performing turn 2
+2016-12-03T18:00:11 INFO     Goging: Right
+2016-12-03T18:00:11 INFO     Consuming letter H at 0:1
+2016-12-03T18:00:11 INFO     Checking word rh for existance
+2016-12-03T18:00:11 INFO     Result:True
+2016-12-03T18:00:11 INFO     Performing turn 3
+2016-12-03T18:00:11 INFO     Goging: Down
+2016-12-03T18:00:11 INFO     Consuming letter E at 1:1
+2016-12-03T18:00:11 INFO     Checking word rhe for existance
+2016-12-03T18:00:11 INFO     Result:True
+2016-12-03T18:00:11 INFO     Found good word. RHE
+2016-12-03T18:00:11 INFO     Checking for word RHE existance in path
+2016-12-03T18:00:11 INFO     Result: 
+2016-12-03T18:00:11 INFO     Performing turn 4
+2016-12-03T18:00:11 INFO     Goging: Down
+2016-12-03T18:00:11 INFO     Consuming letter S at 2:1
+2016-12-03T18:00:11 INFO     Checking word rhes for existance
+2016-12-03T18:00:11 INFO     Result:False
+2016-12-03T18:00:11 INFO     Performing turn 5
+2016-12-03T18:00:11 INFO     Goging: Right
+2016-12-03T18:00:11 INFO     Consuming letter U at 2:2
+2016-12-03T18:00:11 INFO     Checking word rhesu for existance
+2016-12-03T18:00:11 INFO     Result:False
+2016-12-03T18:00:12 INFO     Performing turn 6
+2016-12-03T18:00:12 INFO     Goging: Down
+2016-12-03T18:00:12 INFO     Consuming letter S at 3:2
+2016-12-03T18:00:12 INFO     Checking word rhesus for existance
+2016-12-03T18:00:12 INFO     Result:True
+2016-12-03T18:00:12 INFO     Found good word. RHESUS
+2016-12-03T18:00:12 INFO     Checking for word RHESUS existance in path
+2016-12-03T18:00:12 INFO     Result: 
+2016-12-03T18:00:12 INFO     Performing turn 7
+2016-12-03T18:00:12 INFO     Goging: Down
+2016-12-03T18:00:12 INFO     Consuming letter O at 4:2
+2016-12-03T18:00:12 INFO     Checking word rhesuso for existance
+2016-12-03T18:00:12 INFO     Result:False
+2016-12-03T18:00:12 INFO     Added bad word. RHESUSO
+2016-12-03T18:00:12 INFO     Performing turn 8
+2016-12-03T18:00:12 INFO     Goging: Right
+2016-12-03T18:00:12 INFO     Consuming letter E at 4:3
+2016-12-03T18:00:12 INFO     Checking word e for existance
+2016-12-03T18:00:12 INFO     Result:True
+2016-12-03T18:00:12 INFO     Performing turn 9
+2016-12-03T18:00:12 INFO     Goging: Right
+2016-12-03T18:00:12 INFO     Consuming letter U at 4:4
+2016-12-03T18:00:12 INFO     Checking word eu for existance
+2016-12-03T18:00:12 INFO     Result:True
+2016-12-03T18:00:12 INFO     Performing turn 10
+2016-12-03T18:00:12 INFO     Goging: Down
+2016-12-03T18:00:12 INFO     Consuming letter N at 5:4
+2016-12-03T18:00:12 INFO     Checking word eun for existance
+2016-12-03T18:00:12 INFO     Result:False
+2016-12-03T18:00:12 INFO     Performing turn 11
+2016-12-03T18:00:12 INFO     Goging: Down
+2016-12-03T18:00:12 INFO     Consuming letter I at 6:4
+2016-12-03T18:00:12 INFO     Checking word euni for existance
+2016-12-03T18:00:12 INFO     Result:False
+2016-12-03T18:00:12 INFO     Performing turn 12
+2016-12-03T18:00:12 INFO     Goging: Right
+2016-12-03T18:00:12 INFO     Consuming letter K at 6:5
+2016-12-03T18:00:12 INFO     Checking word eunik for existance
+2016-12-03T18:00:12 INFO     Result:False
+2016-12-03T18:00:12 INFO     Added bad word. EUNIK
+2016-12-03T18:00:12 INFO     Performing turn 13
+2016-12-03T18:00:12 INFO     Goging: Right
+2016-12-03T18:00:12 INFO     Consuming letter S at 6:6
+2016-12-03T18:00:12 INFO     Checking word s for existance
+2016-12-03T18:00:12 INFO     Result:True
+2016-12-03T18:00:12 INFO     Performing turn 14
+2016-12-03T18:00:12 INFO     Goging: Down
+2016-12-03T18:00:12 INFO     Consuming letter C at 7:6
+2016-12-03T18:00:12 INFO     Checking word sc for existance
+2016-12-03T18:00:12 INFO     Result:True
+2016-12-03T18:00:12 INFO     Performing turn 15
+2016-12-03T18:00:12 INFO     Goging: Down
+2016-12-03T18:00:12 INFO     Consuming letter U at 8:6
+2016-12-03T18:00:13 INFO     Checking word scu for existance
+2016-12-03T18:00:13 INFO     Result:False
+2016-12-03T18:00:13 INFO     Performing turn 16
+2016-12-03T18:00:13 INFO     Goging: Right
+2016-12-03T18:00:13 INFO     Consuming letter E at 8:7
+2016-12-03T18:00:13 INFO     Checking word scue for existance
+2016-12-03T18:00:13 INFO     Result:False
+2016-12-03T18:00:13 INFO     Added bad word. SCUE
+2016-12-03T18:00:13 INFO     Performing turn 17
+2016-12-03T18:00:13 INFO     Goging: Down
+2016-12-03T18:00:13 INFO     Consuming letter R at 9:7
+2016-12-03T18:00:13 INFO     Checking word r for existance
+2016-12-03T18:00:13 INFO     Result:True
+2016-12-03T18:00:13 INFO     Performing turn 18
+2016-12-03T18:00:13 INFO     Goging: Right
+2016-12-03T18:00:13 INFO     Consuming letter U at 9:8
+2016-12-03T18:00:13 INFO     Checking word ru for existance
+2016-12-03T18:00:13 INFO     Result:False
+2016-12-03T18:00:13 INFO     Performing turn 19
+2016-12-03T18:00:13 INFO     Goging: Right
+2016-12-03T18:00:13 INFO     Consuming letter F at 9:9
+2016-12-03T18:00:13 INFO     Checking word ruf for existance
+2016-12-03T18:00:13 INFO     Result:False
+2016-12-03T18:00:13 INFO     Performing turn 20
+2016-12-03T18:00:13 INFO     Goging: Down
+2016-12-03T18:00:13 INFO     Consuming letter Y at 10:9
+2016-12-03T18:00:13 INFO     Checking word rufy for existance
+2016-12-03T18:00:13 INFO     Result:False
+2016-12-03T18:00:13 INFO     Added bad word. RUFY
+2016-12-03T18:00:13 INFO     Performing turn 21
+2016-12-03T18:00:13 INFO     Goging: Right
+2016-12-03T18:00:13 INFO     Consuming letter N at 10:10
+2016-12-03T18:00:13 INFO     Checking word n for existance
+2016-12-03T18:00:13 INFO     Result:True
+2016-12-03T18:00:13 INFO     Performing turn 22
+2016-12-03T18:00:13 INFO     Goging: Down
+2016-12-03T18:00:13 INFO     Consuming letter A at 11:10
+2016-12-03T18:00:13 INFO     Checking word na for existance
+2016-12-03T18:00:13 INFO     Result:True
+2016-12-03T18:00:13 INFO     Performing turn 23
+2016-12-03T18:00:13 INFO     Goging: Right
+2016-12-03T18:00:13 INFO     Consuming letter T at 11:11
+2016-12-03T18:00:13 INFO     Checking word nat for existance
+2016-12-03T18:00:13 INFO     Result:True
+2016-12-03T18:00:13 INFO     Found good word. NAT
+2016-12-03T18:00:13 INFO     Checking for word NAT existance in path
+2016-12-03T18:00:13 INFO     Result: 
+2016-12-03T18:00:13 INFO     Performing turn 24
+2016-12-03T18:00:13 INFO     Goging: Down
+2016-12-03T18:00:13 INFO     Consuming letter S at 12:11
+2016-12-03T18:00:13 INFO     Checking word nats for existance
+2016-12-03T18:00:14 INFO     Result:False
+2016-12-03T18:00:14 INFO     Added bad word. NATS
+2016-12-03T18:00:14 INFO     Performing turn 25
+2016-12-03T18:00:14 INFO     Goging: Right
+2016-12-03T18:00:14 INFO     Consuming letter T at 12:12
+2016-12-03T18:00:14 INFO     Checking word t for existance
+2016-12-03T18:00:14 INFO     Result:True
+2016-12-03T18:00:14 INFO     Performing turn 26
+2016-12-03T18:00:14 INFO     Goging: Down
+2016-12-03T18:00:14 INFO     Consuming letter M at 13:12
+2016-12-03T18:00:14 INFO     Checking word tm for existance
+2016-12-03T18:00:14 INFO     Result:True
+2016-12-03T18:00:14 INFO     Performing turn 27
+2016-12-03T18:00:15 INFO     Goging: Down
+2016-12-03T18:00:15 INFO     Consuming letter W at 14:12
+2016-12-03T18:00:15 INFO     Checking word tmw for existance
+2016-12-03T18:00:15 INFO     Result:False
+2016-12-03T18:00:15 INFO     Added bad word. TMW
+2016-12-03T18:00:15 INFO     Ending game
+2016-12-03T18:00:15 INFO     Game finished.
